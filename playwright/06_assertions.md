@@ -120,7 +120,7 @@ to assert that the page title does _not_ contain the word "Users":
 assertThat(page).not().hasTitle("Users");
 ```
 
-### ...And more
+### And more!
 
 You can find a complete list of all the available assertion types within [the 
 Playwright documentation for 
@@ -191,8 +191,6 @@ state.
 
 But what about when things go wrong? We're going to move on to look at some 
 of the debugging tools that Playwright provides.
-
-[Next Challenge](07_debugging_playwright.md)
 
 [Next Challenge](07_debugging_playwright.md)
 

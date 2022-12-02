@@ -48,7 +48,7 @@ which Playwright can use to identify a specific element.
 <details>
   <summary>See how this form looks in a web browser</summary>
     
-    ![Screenshot of login form](loginform.png)
+![Screenshot of login form](loginform.png)
 
 </details>
 
@@ -304,8 +304,6 @@ down the problem?
 
 Now you know how to identify elements on a page, it's time to start performing 
 actions on those elements, and observing what happens!
-
-[Next Challenge](05_actions.md)
 
 [Next Challenge](05_actions.md)
 

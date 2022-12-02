@@ -244,8 +244,6 @@ reduce duplication, and increase the maintainability of your test code.
 
 [Next Challenge](08_page_object_models.md)
 
-[Next Challenge](08_page_object_models.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

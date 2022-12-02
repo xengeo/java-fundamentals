@@ -111,8 +111,6 @@ maximum maintainability.
 
 [Next Challenge](02_setting_up_playwright.md)
 
-[Next Challenge](02_setting_up_playwright.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

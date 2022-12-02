@@ -95,8 +95,6 @@ Playwright test.
 
 [Next Challenge](04_locators.md)
 
-[Next Challenge](04_locators.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

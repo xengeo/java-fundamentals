@@ -153,7 +153,7 @@ Hey presto - your browser page has now changed! If you were to take a
 screenshot at this point, you'd see that you were now on the "Forgot password" 
 page.
 
-### ...And more
+### And more!
 
 There are many more unusual actions that you might wish to perform on an 
 elements, with examples listed in [the Playwright documentation for 
@@ -233,8 +233,6 @@ Now you're equipped with all of the components that you need to understand in
 order to automate your way around a website. All that's left is to plug in 
 some assertions, so that you can test whether your application is performing 
 in the way that you want it to.
-
-[Next Challenge](06_assertions.md)
 
 [Next Challenge](06_assertions.md)
 

@@ -195,8 +195,6 @@ into some JUnit tests.
 
 [Next Challenge](03_playwright_in_junit.md)
 
-[Next Challenge](03_playwright_in_junit.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---
