@@ -1,6 +1,6 @@
 # Test-driving a Java class
 
-Using JUnit, Test-drive a `TodoList` class that satisfies the following user stories. You can use Gradle to [setup a new project configured to use JUnit](../../main/04_testing_with_junit.md#installing-junit-with-gradle). 
+Using JUnit, Test-drive a `TodoList` class that satisfies the following user stories. You can use Gradle to setup a new project configured to use JUnit. 
 
 ```
 As a busy person,
