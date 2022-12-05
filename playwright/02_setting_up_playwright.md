@@ -95,7 +95,17 @@ your choice.
 Not all web browsers are the same. In the early days of the web, competing 
 browsers were built from the ground up, and while there are recommended 
 "standards" for how webpages should be rendered, these were often open to 
-interpretation. That's why we have sites such as 
+interpretation. For instance, suppose you wanted to display some text inside a 
+panel with nicely rounded borders; depending on what library versions you'd 
+used (or, for example, which version of JavaScript it was coded with) then 
+it might render in one of several different ways:
+
+* A panel with nicely-rounded borders. Hooray!
+* A panel with right-angled borders. That's a bit weird, but okay!
+* None of the styling was loaded on the page, because there was a JavaScript 
+exception and the CSS could not be loaded. Oh no!
+
+That's why we have sites such as 
 [Can I Use...](https://caniuse.com/) which allow you to check whether specific 
 technologies are supported by the browsers that you care about.
 
@@ -105,8 +115,8 @@ multiple browsers, especially those which are used most often by your
 customers.
 
 One of Playwright's powers is the ability to run the same test against 
-multiple browser engines, allowing you to test for cross-browser 
-compatibility issues in the browsers that you care about. Let's create such 
+multiple browser engines, allowing you to check that your site performs as 
+you'd expect on all of the browsers that you care about. Let's create such 
 an example!
 
 Create a new Java class called `CrossBrowserTest` and give it the following 
@@ -125,7 +135,10 @@ public class CrossBrowserTest {
         Playwright playwright = Playwright.create();
 
         // Create an Array containing the browsers that
-        // we want to test against
+        // we want to test against:
+        // * Chromium (Chrome / Edge)
+        // * Firefox
+        // * WebKit (Safari)
         List<BrowserType> browsersToTest = Arrays.asList(
                 playwright.chromium(),
                 playwright.firefox(),
@@ -176,7 +189,7 @@ Change Your Life - Become a Software Developer at Makers
 If you look in your project tree view, you should now see 
 `makers-chromium.png`, `makers-firefox.png` and `makers-webkit.png`. They 
 should all look the same, as long as we haven't introduced any 
-browser-specific bugs on our site! 
+browser-specific quirks on our site! 
 
 ## Challenge
 
@@ -188,10 +201,10 @@ should show either "Firefox" or "Safari" respectively.)
 
 ## Summary
 
-You've demonstrated that you can get Playwright up-and-running within an 
-IntelliJ project, and use it to launch and interrogate multiple browsers. 
-Next, we'll begin to incorporate real-world scenarios, by plumbing Playwright 
-into some JUnit tests.
+You've demonstrated that you can get Playwright up-and-running within a new 
+Java Gradle project in IntelliJ, and use it to launch and interrogate multiple 
+browsers. Next, we'll begin to incorporate real-world scenarios, by plumbing 
+Playwright into some JUnit tests.
 
 [Next Challenge](03_playwright_in_junit.md)
 

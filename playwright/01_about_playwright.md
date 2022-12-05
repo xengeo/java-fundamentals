@@ -12,7 +12,8 @@ website will even load successfully?
 Maybe you've already been checking your changes manually in a web browser, and 
 that's great. But do you want to rely on every developer doing this, every 
 time they make a change? On multiple browsers? Wouldn't it be helpful if we 
-could mimic realistic user activity within our automation?
+could mimic realistic user activity, and have these scenarios checked 
+automatically upon new changes to the code?
 
 This is where automated "end-to-end tests" can help. End-to-end tests allow 
 you to simulate the behaviour of real users, taking a "journey" on your 
@@ -66,16 +67,17 @@ on many different systems.
 ## How does it work?
 
 A simple way to think about how end-to-end browser-based testing works is 
-that they "open a web browser, perform some actions, and check the results". 
-But there are a couple of subtleties that are helpful to understand.
+that an automated process on a computer will "open a web browser, perform some 
+actions, and check the results". But there are a couple of subtleties that are 
+helpful to understand.
 
-* **You won't see any browsers popping-up on your machine when the tests are 
-running.** By default, Playwright runs in a "headless mode", which means that 
-it doesn't actually render a browser on the screen. This allows the tests to 
-run much faster (imagine if it takes even 1 second to open a web browser; this 
+* **By default, browsers won't pop-up on the computer when the tests are 
+running.** Playwright's default is a "headless mode", which means that it 
+doesn't actually render a browser on the screen. This allows the tests to run 
+much faster (imagine if it takes even 1 second to open a web browser; this 
 soon adds up if you're running many tests). If you're debugging, it's possible 
 to enable "headed" mode (so you _can_ see the browser) and Playwright has 
-other tools for debugging which we'll take a look at.
+other tools for debugging which we'll take a look at shortly.
 * **Playwright works with _rendering engines_, not browsers.** This is an 
 important distinction which sets Playwright apart from some other frameworks, 
 and again is geared towards speed. Think about the Google Chrome browser for a 
@@ -87,7 +89,7 @@ Chrome, Playwright is actually utilising
 [Chromium](https://www.chromium.org/Home/): the rendering engine which powers 
 Google Chrome's ability to display webpages. (Chromium is also the rendering 
 engine that's used by Microsoft's Edge browser - so by running tests against 
-Chromium, you're effectively testing two browsers at once.)
+Chromium, you're effectively testing those two browsers in one scenario.)
 
 ## Key Components
 

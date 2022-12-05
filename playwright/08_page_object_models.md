@@ -27,6 +27,8 @@ Create a new class called `MakersSearchTest`, with JUnit/Playwright set up
 correctly, and add the following two tests:
 
 ```java
+// in MakersSearchTest.java
+
 @Test
 void shouldFindSearchResultsForJava() {
     page.navigate("https://makers.tech");
@@ -60,11 +62,13 @@ Let's create a Page Object for our search page, which extracts all of the
 code related to our search page into a separate class, with its own 
 helper methods.
 
-Create a new class called `MakersSearchPage`, and moving the code which is 
+Create a new class called `MakersSearchPage`, and move the code which is 
 specific to the search page into this class. We can then import this class 
 into our test class, and use it to perform the search.
 
 ```java
+// in MakersSearchPage.java
+
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
 
@@ -126,8 +130,8 @@ void shouldNotFindSearchResultsForBadger() {
 
 You'll notice a few things about these refactored tests:
 
-* The test themselves no longer need to be concerned with the structure of the 
-page. The `MakersSearchPage` class (which we have imported into the tests) 
+* The tests themselves no longer need to be concerned with the structure of 
+the page. The `MakersSearchPage` class (which we have imported into the tests) 
 takes care of this for us.
 * As a result of this, if we ever made any changes to the search page - for 
 instance, if we changed the text in the search field from "Search for answers" 

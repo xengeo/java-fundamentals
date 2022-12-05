@@ -47,7 +47,7 @@ Now when you run a test, you'll see the browser open, and then wait for two
 seconds before doing each step. This gives you visibility of what's actually 
 happening in your test, to assist you with debugging problems.
 
-## Using pauses to step through your test
+## Using pauses to step through your test
 
 Once you've configured Playwright to run in headed mode, you can take 
 advantage of an even more powerful debugging technique: pausing your test.
@@ -98,7 +98,7 @@ that you added the `loadInspector()` task to your Gradle file within the
 [Locators exercise](04_locators.md), you can run the following command:
 
 ```bash
-./gradlew loadInspector --args="codegen makers.tech"
+./gradlew loadInspector --args=https://makers.tech"
 ```
 
 When you run this command, the Inspector will launch with the specified 
@@ -142,8 +142,8 @@ single screenshot of your webpage at any point during your test. During
 debugging, you may also wish to take advantage of Playwright's ability to 
 capture videos of its test runs. This can be particularly helpful if you've 
 encountered a problem that you want to demonstrate to a developer - it's 
-much easier to explain what's happening by providing them a video of the 
-bug which you've encountered.
+much easier to explain what's happening by providing them a video of what 
+you've encountered.
 
 You can enable video capture at the point where you initialise your browser 
 context within the tests. If you've been following along with our template, 
@@ -183,7 +183,7 @@ Let's open the Inspector in code generation mode, and take a look at the
 TodoMVC website. Run the following from the command-line:
 
 ```bash
-./gradlew loadInspector --args="codegen todomvc.com"
+./gradlew loadInspector --args="codegen https://todomvc.com"
 ```
 
 Click on the "React" link to take you to the React version of the TodoMVC
@@ -230,7 +230,7 @@ Conduct".
 Check that the test runs and all of the assertions are passing.
 
 Finally, add "slow motion" mode to your Playwright instance, and instruct it 
-to pause for 2 seconds between steps. Then configure your test so that it 
+to wait for 2 seconds between steps. Then configure your test so that it 
 saves a video of the test run. 
 
 Run the test, and check that the video has been saved in the `videos` folder.

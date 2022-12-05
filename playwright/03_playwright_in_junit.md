@@ -3,11 +3,11 @@ following the commands that you programmed. In the previous exercise, we
 wrote our Playwright code directly into the main function of a class, as it 
 allowed us to get our hands dirty more quickly. 
 
-However, these are tests, so going forwards we are going to structure them as 
-such. You can incorporate Playwright code into JUnit tests, so that they can 
-be executed alongside your unit tests. And when we're running within a larger 
-test suite, we can also take advantage of some JUnit features which allow us 
-to perform setup and teardown actions before/after our tests.
+However, because we will be using Playwright to write tests, going forwards 
+we are going to structure them into JUnit tests, so that they can be executed 
+alongside your unit tests. And when we're running within a larger test suite, 
+we can also take advantage of some JUnit features which allow us to perform 
+setup and teardown actions before/after our tests.
 
 <!-- OMITTED -->
 
@@ -65,11 +65,12 @@ individual test. In this case, we're creating a new browser context for each
 test, and then creating a new page (tab) which we can reference within the 
 tests.
 
-## Adding a test
+## Working with Playwright in JUnit
 
-Now all that's left to do is incorporate our Makers test. If we want to create 
-a test which prints the page title into the terminal, all we have to do is add 
-the following test snippet within our `MakersTest` class:
+Now all that's left to do is incorporate our code for browsing the Makers 
+site. If we want to create a function which prints the page title into the 
+terminal, all we have to do is add the following snippet within our 
+`MakersTest` class:
 
 ```java
     @Test
@@ -79,9 +80,9 @@ the following test snippet within our `MakersTest` class:
     }
 ```
 
-Now you should be able to trigger the `shouldPrintPageTitle()` test 
-individually (or run the entire `MakersTest` test class) and observe the page 
-title being printed successfully in the terminal.
+Now IntelliJ should allow you to run the `shouldPrintPageTitle()` function 
+(or run the entire `MakersTest` class) and you should observe the page title 
+being printed successfully in the terminal.
 
 ## Summary
 

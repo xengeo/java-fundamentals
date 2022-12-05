@@ -79,11 +79,11 @@ many list items are visible on the page.
 
 ```java
 // This will pass if the number of users listed is 5
-// It will fail if there are more (or less) than 5 users
+// It will fail if there are more (or fewer) than 5 users
 assertThat(page.getByRole(AriaRole.LISTITEM)).hasCount(5);
 ```
 
-### hasTitle
+### hasTitle
 
 `hasTitle()` is a special assertion which checks the title of the current
 page. This is useful if you want to check that you have navigated to the

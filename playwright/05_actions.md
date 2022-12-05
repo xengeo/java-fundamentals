@@ -40,13 +40,13 @@ Let's look at the example HTML form which we used in the previous exercise:
     <h3>Enter your details</h3>
     <form>
         <p><label>Username <input type="text" name="usr"></label></p>
-        <p><label>Password <input type="password" name="pwd"></label></p>
+        <p><label>Password <input type="password" name="field130a7" data-testid="passwordField"></label></p>
         <p><label for="zone">Your location:</label>
         <select name="zone" id="zone">
 		  <option value="eu">Europe</option>
           <option value="row">Rest of World</option>
         </select></p>
-        <p><input type="checkbox" /> Remember me</p>
+        <p><input type="checkbox"> Remember me</p>
         <p><input type="submit" value="Sign in"></p>
     </form>
     <p><a href="/reset">Forgot your password?</a></p>
@@ -56,7 +56,7 @@ Let's look at the example HTML form which we used in the previous exercise:
 <details>
   <summary>Remind yourself how this form looks in a web browser</summary>
     
-    ![Screenshot of login form](loginform.png)
+  ![Screenshot of login form](loginform.png)
 
 </details>
 
@@ -107,20 +107,20 @@ the box unchecked.
 
 A drop-down list (represented by an HTML `<select>` element, with `<option>` 
 sub-elements) can be interacted with by specifying either the value, the 
-label, or the index of the item that you wish to select. For instance, all 
+label, or the index of the item that you wish to select. For instance, each 
 of the below examples will select the first item in the "Your location" 
 drop-down:
 
 ```java
 Locator dropDown = page.getByLabel("Your location");
 
-// Select the first item using its value (ID)
+// Option 1: Select the first item using its value (ID)
 dropDown.selectOption("eu");
 
-// Select the first item using its label
+// Option 2: Select the first item using its label
 dropDown.selectOption(new SelectOption().setLabel("Europe"));
 
-// Select the first item using its index (starts with zero)
+// Option 3: Select the first item using its index (starts with zero)
 dropDown.selectOption(0);
 ```
 
@@ -135,9 +135,10 @@ tests harder to maintain.
 be less likely to change. However, sometimes it won't always be obvious what 
 the value refers to; imagine if the value for Europe was "176543" for 
 instance - this would make it harder to understand what your test is doing.
-* Selecting an option by index is generally not a good idea, because if 
-somebody changes the order of the elements in the list (or adds/removes 
-elements) then suddenly your test will be selecting an unexpected option.
+* If you care about which value you are selecting, then picking an option by 
+index is generally not a good idea, because if somebody changes the order of 
+the elements in the list (or adds/removes elements) then suddenly your test 
+will be selecting an unexpected option.
 
 ### Clicking on a link
 
@@ -157,7 +158,7 @@ page.
 
 There are many more unusual actions that you might wish to perform on an 
 elements, with examples listed in [the Playwright documentation for 
-Actions]((https://playwright.dev/java/docs/input). Such actions include:
+Actions](https://playwright.dev/java/docs/input). Such actions include:
 
 * Pressing a keyboard shortcut
 * Hovering the mouse over an element
@@ -174,7 +175,7 @@ the previous exercise, your TodoMVC test should look a bit like this:
 
     @Test
     void shouldPrintPageTitle() {
-        page.navigate("https://todomovc.com");
+        page.navigate("https://todomvc.com");
         Locator githubButton = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("View on GitHub"));
         System.out.println(githubButton.textContent());
 

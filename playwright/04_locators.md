@@ -19,7 +19,7 @@ Model (DOM). In order to find the "Sign in" button, you need to give your
 automation a piece of information (commonly called a locator) which allows it 
 to uniquely identify that element.
 
-## Types of Locator
+## Types of Locator
 
 Let's look at an example snippet of HTML, and how we might design a locator 
 which Playwright can use to identify a specific element.
@@ -29,13 +29,13 @@ which Playwright can use to identify a specific element.
     <h3>Enter your details</h3>
     <form>
         <p><label>Username <input type="text" name="usr"></label></p>
-        <p><label>Password <input type="password" name="pwd"></label></p>
+        <p><label>Password <input type="password" name="field130a7" data-testid="passwordField"></label></p>
         <p><label for="zone">Your location:</label>
         <select name="zone" id="zone">
 		  <option value="eu">Europe</option>
           <option value="row">Rest of World</option>
         </select></p>
-        <p><input type="checkbox" /> Remember me</p>
+        <p><input type="checkbox"> Remember me</p>
         <p><input type="submit" value="Sign in"></p>
     </form>
     <p><a href="/reset">Forgot your password?</a></p>
@@ -133,7 +133,7 @@ be a number, you could write the locator as follows:
 // This will match "Version 3", "Version 4", even "Version 999"!
 // \d means "a digit between 0 and 9"
 // + means "at least 1 of them"
-// Therefore \d+ means "at least 1 number"
+// Therefore \d+ means "at least 1 digit"
 Locator siteVersion = page.getByText(Pattern.compile("Version \d+");
 ```
 
@@ -141,25 +141,44 @@ Locator siteVersion = page.getByText(Pattern.compile("Version \d+");
 indeed pretty much anywhere in Playwright where standard text strings are 
 accepted.)
 
+### getByTestId()
+
+```java
+Locator passwordField = page.getByTestId("passwordField");
+```
+
+If your site is being constructed in such a way that its text or role 
+attributes are frequently in flux, the locator types listed above might 
+require a lot of maintenance work. One way to avoid this is by working with 
+the website developers to add _testability_ into your application: by adding 
+explicit test attributes (such as `data-testid="passwordField"` in our example 
+above) onto your HTML elements, you can ensure that your tests are robust 
+against changes to the site's text or structure.
+
+If you can't reliably locate an element by role or text, `getByTestId()` is 
+the recommended way to go. However it relies on you having access to a team 
+that's willing to work with you to add these attributes to your site. 
+Technically it also goes against Playwright's purpose of "browsing like a
+user", but it's a pragmatic compromise that can be very useful.
+
 ### Locating elements by CSS or XPath Selector
 
 ```java
 Locator rememberMe = page.locator("xpath=//span/form/input[@type='checkbox']");
 ```
 
-This is a deliberately ugly example, provided more as a warning than a 
-recommendation!
-
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and 
 [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) selectors are 
 undeniably powerful, and they're the building blocks of many an automation 
-framework (if you encounter Selenium, you'll definitely find yourself having 
-to be more aware of how they work).
+framework. (If you encounter Selenium, you'll definitely find yourself having 
+to be more aware of how they work.)
 
-However, they're discouraged in Playwright, for several good reasons:
+Learning how to wield them effectively could be an entire chapter 
+in itself. However, they're discouraged in Playwright, for several good 
+reasons:
 
 * Playwright attempts to browse a site "like a user". There aren't any users 
-in the world who browse a website by saying "I'm going to find a  `<span>` 
+in the world who browse a website by saying "I'm going to find a `<span>` 
 element, and then find a `<form>` tag underneath that, and then find the 
 `<input>` element which is coded to be a checkbox".
 * Other people - including you, in the future! - will have to maintain your 
@@ -179,7 +198,7 @@ You can read more about the syntax behind Text, CSS and XPath selectors in the
 [Playwright Selectors 
 documentation](https://playwright.dev/java/docs/selectors).
 
-### ...And more
+### ...And more
 
 There are many more locator types that you can investigate, and more advanced 
 techniques that you can employ, such as chaining locators together, or 
@@ -245,7 +264,7 @@ Now add a new test scenario which navigates to the TodoMVC website:
 
     @Test
     void shouldPrintPageTitle() {
-        page.navigate("https://todomovc.com");
+        page.navigate("https://todomvc.com");
         // Now we are on the TodoMVC homepage.
         // We'll write the rest of our code here!
 
@@ -254,7 +273,7 @@ Now add a new test scenario which navigates to the TodoMVC website:
 
 Check that this runs and gives you a green tick - it's not doing anything 
 spectacular yet, but this will at least allow you to confirm that your 
-Playwright integration is setup correctly.
+Playwright integration is set up correctly.
 
 We have access to a variable `page` which gives us access to the content of 
 that page. Now let's flex our locator creation muscles!
