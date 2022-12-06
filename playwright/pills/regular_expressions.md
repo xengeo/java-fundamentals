@@ -1,6 +1,6 @@
 # Regular Expressions
 
-A regular expressions (often shortened to "regex" or "regexp") is a powerful 
+A regular expression (often shortened to "regex" or "regexp") is a powerful 
 tool for matching patterns in text. Regexes are used in many programming 
 languages, as a way of reliably identifying text which corresponds to a 
 particular pattern, but where the exact text content is not known or 
@@ -9,17 +9,15 @@ varies.
 ## A simple example
 
 Even the most basic regular expressions can still be incredibly helpful. 
-Suppose you have a webpage which displays some text "Priority: X" (where X is 
-a number from 1 to 5). A regular expression which could match this pattern 
-would be:
+Suppose you have a webpage which displays a priority, in the format of "P1" 
+to "P5". A regular expression which could match this pattern would be:
 
-`/Priority: [1-5]/`
+`/P[1-5]/`
 
 The square brackets (and the dash) indicate that the character inside the
 brackets can be any of the characters between the first and last characters
-in the brackets. So, for example, the regex above would match "Priority: 1",
-"Priority: 2", "Priority: 3", "Priority: 4" and "Priority: 5". It wouldn't 
-match "Priority: 6", because 6 is not between 1 and 5.
+in the brackets. So, for example, the regex above would match "P1", "P2", 
+"P3", "P4" and "P5". It wouldn't match "P6", because 6 is not between 1 and 5.
 
 ## A more complex example
 
@@ -35,8 +33,19 @@ Here, we're using the same square bracket syntax as before, but we're also
 using curly brackets to indicate the number of characters that should match
 the preceding pattern. So `[A-Z]{2}` means "match two uppercase letters", and
 `[0-9]{2}` means "match two digits". The curly brackets can also be used to
-indicate a range of numbers, e.g. `[A-Z]{1,2}` means "match one or two
-uppercase letters".
+indicate the required range of occurrences, e.g. `[A-Z]{1,2}` means "match 
+one or two uppercase letters".
+
+These are known as "quantifiers" in regular expressions, and while we'll show 
+you where to find a really good regex cheat sheet shortly, here's a quick 
+summary of some other valuable quantifiers:
+
+* `*` = "match zero or more of the preceding character". So, `Hello[!]*` 
+matches "Hello!!" and "Hello!", but also "Hello".
+* `+` = "match one or more of the preceding character". `Hello[!]+` will again 
+match "Hello!!" and "Hello!", but it won't match "Hello".
+* `?` = "match either zero or one of the preceding character". `Hello[!]?` 
+will match "Hello" and "Hello!", but not "Hello!!".
 
 ## Advanced regular expressions
 
@@ -60,14 +69,13 @@ you're using this regular expression within your test automation (in order to
 locate an element), consider whether you can use an alternative locator
 pattern, such as locating the element by its ID. 
 
-Or, if you're using the regex 
-to validate user input, consider whether you can use a simpler validation
-method, such as checking that the email address contains an `@` symbol, which 
-may be sufficient if you're going to send the user an invite to confirm their 
-sign-up (they won't be able to confirm sign-up unless they entered a valid 
-email address). 
+Or, if you're using the regex to validate user input, consider whether you can 
+use a simpler validation method, such as checking that the email address 
+contains an `@` symbol, which may be sufficient if you're going to send the 
+user an invite to confirm their sign-up (they won't be able to confirm sign-up 
+unless they entered a valid email address). 
 
-![xkcd: Perl Problems](https://imgs.xkcd.com/comics/perl_problems.png)
+![xkcd: Perl Problems](../resources/xkcd.png)
 
 ## Practicing with regular expressions
 
@@ -92,6 +100,12 @@ capital letter, and if it ends with an exclamation mark.
 
 ![RegEx Pal example](../resources/regexpal.png)
 
+Testing your regular expression in a tool like RegEx Pal is a great way to 
+ensure that your regex is working as you expect it to. For instance, the above 
+regular expression is far from perfect: can you think of any other problems 
+that it might encounter when matching names? (Hint: The example was originally 
+intending to say hello to all of the members of ABBA.)
+
 ## Exercise
 
 If you'd like to practice creating regular expressions, here are some examples 
@@ -108,7 +122,7 @@ second part of the number is between 6 and 7 digits long.
 isn't a space between the two parts of the number. For example, it should
 match "01234567890" as well as "01234 567890".
 3. Improve the regular expression again, so that it ensures that the first 
-digit of the number is a 0 (it shouldn't match "12345 67890").
+digit of the number is a 0 (it shouldn't match "1234 567890").
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
