@@ -48,7 +48,7 @@ which Playwright can use to identify a specific element.
 <details>
   <summary>See how this form looks in a web browser</summary>
     
-![Screenshot of login form](loginform.png)
+![Screenshot of login form](resources/loginform.png)
 
 </details>
 
@@ -131,15 +131,18 @@ be a number, you could write the locator as follows:
 
 ```java
 // This will match "Version 3", "Version 4", even "Version 999"!
-// \d means "a digit between 0 and 9"
+// [0-9] means "a digit between 0 and 9"
 // + means "at least 1 of them"
-// Therefore \d+ means "at least 1 digit"
-Locator siteVersion = page.getByText(Pattern.compile("Version \d+");
+// Therefore [0-9]+ means "at least 1 digit"
+Locator siteVersion = page.getByText(Pattern.compile("Version [0-9]+");
 ```
 
 (You can also use regular expressions with the `getByRole()` locator, and 
 indeed pretty much anywhere in Playwright where standard text strings are 
 accepted.)
+
+If you'd like to learn more about regular expressions, [this 
+pill](pills/regular_expressions.md) contains further worked examples.
 
 ### getByTestId()
 
@@ -233,7 +236,7 @@ Now, in your terminal, you can run `./gradlew loadInspector` from your
 project's folder, and your machine will launch a Playwright Inspector window, 
 with a companion Chromium tab:
 
-![An empty Playwright Inspector window.](inspector1.png)
+![An empty Playwright Inspector window.](resources/inspector1.png)
 
 Let's see what Playwright Inspector can do for us. 
 
@@ -243,7 +246,7 @@ website to load.
 hover over the different elements on the TodoMVC website. You'll see that 
 Playwright will suggest a locator which will uniquely identify that element:
 
-![Playwright Inspector with 'Examples' locator.](inspector2.png)
+![Playwright Inspector with 'Examples' locator.](resources/inspector2.png)
 
 3. Click on any element, and the locator for that element will appear in 
 the Playwright Inspector window, allowing you to copy it for use in your tests.

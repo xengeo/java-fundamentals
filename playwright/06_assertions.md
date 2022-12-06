@@ -54,8 +54,9 @@ text "Clive" is present.
 assertThat(page.locator("h1")).containsText("Clive")
 ```
 
-As we saw when creating locators, you can also use a regular expression to 
-check for a particular pattern of text within an element.
+As we saw when creating locators, you can also use a [regular 
+expression](pills/regular_expressions.md) to check for a particular pattern of 
+text within an element.
 
 ### hasCount
 

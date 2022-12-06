@@ -69,7 +69,7 @@ Make sure that you're also using `setHeadless(false)` when launching your
 browser. Now run your test, and you'll see the browser open, navigate to the
 page, and then pause with the Playwright Inspector window open:
 
-![Playwright Inspector paused after starting test.](inspector3.png)
+![Playwright Inspector paused after starting test.](resources/inspector3.png)
 
 You'll notice that there are two green buttons visible in the Inspector 
 toolbar. The one on the left is a "Resume" button, which will cause Playwright
@@ -90,7 +90,7 @@ actions: as you click on elements in the browser, or complete form fields,
 you'll see the corresponding Playwright commands appear in the Inspector's
 window.
 
-![Playwright Inspector recording actions in real-time.](inspector4.png)
+![Playwright Inspector recording actions in real-time.](resources/inspector4.png)
 
 Alternatively, you can instruct the Inspector to open directly in recording 
 mode, by launching it in "Code Generator" mode from the command-line. Assuming 

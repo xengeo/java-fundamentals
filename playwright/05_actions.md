@@ -56,7 +56,7 @@ Let's look at the example HTML form which we used in the previous exercise:
 <details>
   <summary>Remind yourself how this form looks in a web browser</summary>
     
-  ![Screenshot of login form](loginform.png)
+  ![Screenshot of login form](resources/loginform.png)
 
 </details>
 
