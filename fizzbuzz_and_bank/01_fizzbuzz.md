@@ -16,6 +16,10 @@ In this exercise you will test-drive Fizzbuzz.
   - [Strings](#strings)
   - [JUnit Tests](#junit-tests)
 
+## Video Demonstration (set up)
+
+[Here is a link](https://youtu.be/aXlOW3wq2tQ) to a set up video with Roi and Will. 
+
 ## Exercise
 
 _This is the exercise. You may or may not be able to do this yet. Use the
@@ -91,9 +95,10 @@ Let's go ahead and set up a new project.
 
 <!-- OMITTED -->
 
-* Install the [IntelliJ IDE](https://www.jetbrains.com/idea/).
-* Create a new Gradle Java project. 
-* Call it `tryout`.
+* Install the [IntelliJ IDE](https://www.jetbrains.com/idea/) Community Edition if you haven't already.
+* Call your project `tryout`.
+* Select a new Gradle Java project. 
+* Select a JDK that uses version 17 of Java (Eclipse Temurin 17 for example)
 * Wait for it to download and install the dependencies. This might take a few
   minutes.
 
@@ -146,7 +151,52 @@ Can you spot the "Hello, world!" there? Great! Let's move on.
 
 ### Ifs and Loops
 
-<!-- OMITTED -->
+Conditional flow (if statements), and control flow (loops) work much in the same way as we have seen in other languages previously.
+
+All that needs to be considered mainly, is the syntactical difference! Let's take a look at an if statement:
+
+``` java
+String name = "Will";
+
+if (name == "Will") {
+  System.out.println("Hey there, Will!");
+} else {
+  System.out.println("Ok, where have you hidden Will?");
+}
+```
+
+Pretty straight forward. And if we wanted to include an `else if`:
+
+``` java
+String name = "Neil";
+
+if (name == "Will") {
+  System.out.println("Hey there, Will!");
+} else if (name == "Neil") {
+  System.out.println("Buenas dias, Neil.");
+} else {
+  System.out.println("Ok, where have you hidden the coaches?");
+}
+```
+
+Great stuff. Let's take a look at a for loop. It follows a syntax that you may have seen if you've looked at JavaScript before (JS pinched their syntax from Java after all!)
+
+``` java
+Integer number = 12;
+
+for (int i = 1; i < number; i++) {
+  System.out.println("The number is:" + i)
+}
+```
+
+Here the `for loop` is iterating up to the value of `number`. 
+
+We first set the index variable (often called `i`) as an integer of 1.
+
+Then we set the condition - if `i` is less than `number` do...
+
+The execution which is to add 1 to `i` (with `i++`), and then open the code block to hold the executable code (the `System.out.println()` method.)
+
 
 Take a look at the official Java documentation for  [ifs](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html) and [loops](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html).
 

@@ -17,6 +17,15 @@ In this module you will learn to:
 * Automate requests and assertions in a web browser using Playwright.
 * Explain the main differences between Java and languages like Python, Ruby or Javascript.
 
+
+## IntelliJ Set Up
+
+We will be using the [IntelliJ IDE](https://www.jetbrains.com/idea/) from Jet Brains! 
+
+Head to the [link](https://www.jetbrains.com/idea/download/#section=mac) and download the Community Edition - this is the edition that is free, but is more than capable of handling absolutely everything we need to be able to get going with our Java learning!
+
+Once you have downloaded the `.dmg` file from the website you can drag it into your Applications folder and get started with the "Fizzbuzz" initial challenge.
+
 ## Fizzbuzz and Bank
 
 Learn the basics of the syntax and testing of Java by working through two projects:
