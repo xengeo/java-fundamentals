@@ -266,7 +266,7 @@ Now add a new test scenario which navigates to the TodoMVC website:
 // in TodoTest.java
 
     @Test
-    void shouldPrintPageTitle() {
+    void shouldLoadHomepage() {
         page.navigate("https://todomvc.com");
         // Now we are on the TodoMVC homepage.
         // We'll write the rest of our code here!

@@ -174,7 +174,7 @@ the previous exercise, your TodoMVC test should look a bit like this:
 // in TodoTest.java
 
     @Test
-    void shouldPrintPageTitle() {
+    void shouldLoadHomepage() {
         page.navigate("https://todomvc.com");
         Locator githubButton = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("View on GitHub"));
         System.out.println(githubButton.textContent());
