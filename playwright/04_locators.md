@@ -302,7 +302,7 @@ Next, look within the Examples section on the right-hand side of the page. You
 should see several tabs, the first of which is labeled "JavaScript". Can you 
 locate this in the page, and print its content to the terminal?
 
-[Example solution]() <!-- OMITTED -->
+<!-- OMITTED -->
 
 ## Challenge
 

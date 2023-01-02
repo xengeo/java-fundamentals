@@ -90,7 +90,7 @@ activities:
 * Takes a screenshot of the website, and saves it to a file with a name of 
 your choice.
 
-[Example solution]() <!-- OMITTED -->
+<!-- OMITTED -->
 
 ## Testing multiple browsers simultaneously
 

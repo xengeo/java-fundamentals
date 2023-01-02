@@ -199,7 +199,7 @@ and evaluate which version you prefer (or even whether it's produced the same
 code as you wrote). How do you feel about using the code generator, compared 
 to writing the code yourself?
 
-[Example solution]() <!-- OMITTED -->
+<!-- OMITTED -->
 
 ## Challenge
 

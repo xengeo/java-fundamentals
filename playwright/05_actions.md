@@ -206,7 +206,7 @@ And if you open your `react.png` screenshot, you should see a picture of the
 To-Do List application where we're going to perform assertions in the next 
 exercise.
 
-[Example solution]() <!-- OMITTED -->
+<!-- OMITTED -->
 
 ## Challenge
 

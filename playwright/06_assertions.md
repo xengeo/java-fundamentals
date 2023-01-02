@@ -150,7 +150,7 @@ Write a test for the TodoMVC application which does the following:
 * Tick the checkbox to mark "Buy some milk" as completed.
 * Assert that there is a message "0 items left" at the bottom of the list.
 
-[Example solution]() <!-- OMITTED -->
+<!-- OMITTED -->
 
 ## Challenge
 
