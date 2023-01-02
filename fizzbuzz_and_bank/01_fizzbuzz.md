@@ -185,7 +185,7 @@ Great stuff. Let's take a look at a for loop. It follows a syntax that you may h
 Integer number = 12;
 
 for (int i = 1; i < number; i++) {
-  System.out.println("The number is:" + i)
+  System.out.println("The number is:" + i);
 }
 ```
 

@@ -61,11 +61,13 @@ Read through the code and comments, and check that you can understand what
 is happening on each line. (One of Playwright's strengths is that its code 
 tends to be relatively easy to read, even if you're new to its syntax.)
 
-Run this test - your terminal output should include the following (it's 
-printing the webpage title):
+Run this test. This might take a minute when you run it for the first time, as 
+Playwright will download the binaries that it requires for each of the 
+browsers, but eventually the build should succeed and you will see the 
+following message near the bottom of your terminal output (it's printing the  
+page title of the Makers homepage):
 
 ```
-> Task :HelloMakers.main()
 Change Your Life - Become a Software Developer at Makers
 ```
 
