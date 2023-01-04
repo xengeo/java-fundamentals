@@ -1,3 +1,5 @@
+# Creating a new Playwright test in JUnit
+
 You've seen Playwright running, and driving itself around a web browser, 
 following the commands that you programmed. In the previous exercise, we 
 wrote our Playwright code directly into the main function of a class, as it 
@@ -10,8 +12,6 @@ we can also take advantage of some JUnit features which allow us to perform
 setup and teardown actions before/after our tests.
 
 <!-- OMITTED -->
-
-## Creating a new Playwright test in JUnit
 
 Let's rewrite the `HelloMakers` example from the previous exercise, but this 
 time in a JUnit test.

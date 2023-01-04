@@ -1,3 +1,5 @@
+# Assertions in Playwright
+
 By now, you know how to identify elements on a webpage using Playwright, 
 and perform actions on the located elements. This already gives us the 
 ability to move around a website just like a real user, but we're still 
@@ -6,7 +8,7 @@ that the outcome of our actions is what we expect.
 
 <!-- OMITTED -->
 
-## Intro
+## Introduction
 
 We've written a lot of Playwright code already, but it's been entirely focused 
 on navigating and interacting with pages. We've not specifically written any 

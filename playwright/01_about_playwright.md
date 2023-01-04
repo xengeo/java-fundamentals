@@ -1,7 +1,4 @@
-Learn how Playwright (and similar frameworks) can help you to create reliable 
-end-to-end tests for your applications. 
-
-## Intro
+# About Playwright
 
 As you've already discovered, unit testing is a key part of your test 
 strategy when building web applications. It's reassuring to know that your 

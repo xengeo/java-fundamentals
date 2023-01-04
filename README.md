@@ -65,13 +65,17 @@ web automation into your Java applications.
 1. [About Playwright](./playwright/01_about_playwright.md)
 2. [Setting up Playwright](./playwright/02_setting_up_playwright.md)
 3. [Playwright in JUnit](./playwright/03_playwright_in_junit.md)
-3. [Locators](./playwright/04_locators.md)
-4. [Actions](./playwright/05_actions.md)
-5. [Assertions](./playwright/06_assertions.md)
-6. [Debugging Playwright](./playwright/07_debugging_playwright.md)
-7. [Page Object Models](./playwright/08_page_object_models.md)
+4. [Locators](./playwright/04_locators.md)
+5. [Actions](./playwright/05_actions.md)
+6. [Assertions](./playwright/06_assertions.md)
+7. [Debugging Playwright](./playwright/07_debugging_playwright.md)
+8. [Page Object Models](./playwright/08_page_object_models.md)
 
-## Optional Exercises
+If you complete all of the above Playwright exercises, there are some 
+extension challenges available:
+
+9. [Emulating devices and locations](./playwright/09_emulating_devices_and_locations.md)
+10. [Advanced locators](./playwright/10_advanced_locators.md)
 
 ## Practicals and resources for self-directed learning
 

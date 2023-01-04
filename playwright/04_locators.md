@@ -1,3 +1,5 @@
+# Locators in Playwright
+
 In this exercise, we'll look at some of the different ways in which Playwright 
 enables you to identify elements on a webpage, which is essential if you want 
 to perform actions (e.g. clicking buttons/links) or assertions (e.g. checking 
@@ -5,7 +7,7 @@ that an element has the value that you expect).
 
 <!-- OMITTED -->
 
-## Intro
+## Introduction
 
 When a sighted person looks at a webpage, and they want to identify an element 
 on that page, they use their eyes. Suppose they want to find a "Sign in" 

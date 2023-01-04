@@ -1,3 +1,5 @@
+# Actions in Playwright
+
 In the previous exercise, we looked at the different ways in which you can 
 locate elements on a webpage. The good news is, that was the hard part! Once 
 you've successfully located an element, Playwright has a variety of methods 
@@ -6,7 +8,7 @@ the same way as a real user would.
 
 <!-- OMITTED -->
 
-## Intro
+## Introduction
 
 In our initial introduction to Playwright, we discussed that most end-to-end 
 automation takes the form of "open a web browser, perform some actions, and 

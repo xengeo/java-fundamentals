@@ -1,3 +1,5 @@
+# Debugging Playwright
+
 In the Golden Square module, you experienced the power of debugging as a 
 technique for gaining visibility into problems within your code. In this 
 challenge, you will apply these same techniques to debugging Playwright tests.

@@ -1,10 +1,12 @@
+# Page Object Models
+
 In this exercise, we'll look at how we can structure our Playwright tests to 
 make them easier to read and maintain. We'll do this by using a technique called
 Page Object Models.
 
 <!-- OMITTED -->
 
-## Intro
+## Introduction
 
 So far, we've been writing all of our Playwright tests in isolation, with no 
 knowledge of what code we've written in previous tests. It's functional, but
@@ -170,6 +172,8 @@ duplication in your tests, which is always a good thing.
 
 We'll be looking much more at Page Object Models during the Automating 
 Checking module.
+
+[Next Challenge](09_emulating_devices_and_locations.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

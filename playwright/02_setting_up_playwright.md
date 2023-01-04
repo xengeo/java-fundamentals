@@ -1,9 +1,9 @@
+# Setting up a project with Playwright
+
 In this exercise, you will set up Playwright in a new Java project, and use 
 it to run a simple test against a real website in multiple browser contexts.
 
 <!-- OMITTED -->
-
-## Setting up a project with Playwright
 
 First, create a new Gradle Java project called `playwright-demo`.
 
