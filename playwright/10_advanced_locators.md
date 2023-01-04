@@ -58,7 +58,7 @@ website.
 which locates the new file on disk, and prints its contents into the 
 console.
 
-## Keep exploring!
+## Keep exploring!
 
 Now it's "Choose Your Own Adventure" time! Look at some of the other examples 
 on [The Internet](https://the-internet.herokuapp.com/). Experiment with writing 

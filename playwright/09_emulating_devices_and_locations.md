@@ -83,7 +83,7 @@ Now, if you take a screenshot of your page (or run Playwright in headed mode),
 you should observe that the page is being loaded and rendered in a smaller, 
 portrait orientation.
 
-## Emulating timezones
+## Emulating timezones
 
 In the same way as above, you can override the locale or timezone of your 
 machine by setting browser context options. For example, suppose you have a 
@@ -125,7 +125,7 @@ When you re-run the test, the screenshot should now show New York's local time.
 
 </details>
 
-## Emulating dark mode
+## Emulating dark mode
 
 If a site supports dark mode, you don't want to have to wait until after sunset 
 to be able to confirm whether it's behaving as expected! Let's take a look at 
