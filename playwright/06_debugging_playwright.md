@@ -236,10 +236,10 @@ to writing the code yourself?
 
 ## Summary
 
-Now you're writing tests with Playwright, and bending the framework to your
-will, it's time to start thinking about how you can make your tests more
-robust and reliable. We're going to look at using Page Object Models to
-reduce duplication, and increase the maintainability of your test code.
+Now you're writing commands with Playwright, and you've got access to a large 
+selection of tools to help you with your code creation. Next, it's time to 
+turn these into actual tests, bu performing assertions on the data that we 
+encounter.
 
 [Next Challenge](07_assertions.md)
 
