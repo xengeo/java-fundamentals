@@ -99,6 +99,17 @@ performing an action.
 assertThat(page).hasTitle("Users");
 ```
 
+This will only pass if the title is **exactly** the value specified; the above 
+assertion would fail if the title was "Users Portal", for example. Thankfully, 
+as with many places where you can use strings in Playwright, you can 
+alternatively use regular expressions here:
+
+```java
+// This looks similar to the above, but now Users is a regular expression
+// It will match if the title is "Users", "All Users", "Users123" etc.
+assertThat(page).hasTitle(Pattern.compile("Users"));
+```
+
 ### hasURL
 
 Similarly, `hasURL()` allows you to check the web address of the current page, 
@@ -123,6 +134,44 @@ to assert that the page title does _not_ contain the word "Users":
 assertThat(page).not().hasTitle("Users");
 ```
 
+### Checking if an element is present
+
+Sometimes, you might not want to interact with a particular page element - you 
+may just wish to confirm whether it exists. (For instance, if a user is 
+logged-out, maybe you have a test which purely checks for the presence of a 
+"Log in" button.)
+
+There are a few ways to achieve this; here are a couple of suggestions. 
+Firstly, as long as your locator has identified exactly one element, you can 
+utilise the `isVisible()` method which is available on every locator:
+
+```java
+// Check the button titled "Log in" is visible on the page
+Locator loginButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Log in"));
+assertThat(loginButton).isVisible();
+```
+
+If you're expecting a specific number of matches for a locator, and especially 
+if that number is more than 1, you can use the locator's `hasCount()` method 
+to check that you have the exact number of matches:
+
+```java
+// Continuing the above example, confirm there is only one login button
+assertThat(loginButton).hasCount(1);
+
+// ...or if you were expecting two login buttons for some reason
+assertThat(loginButton).hasCount(2);
+```
+
+You can also combine this with the `not()` modifier which we showed above, to 
+confirm the opposite. For instance, if you are logged-in, maybe you want to 
+check that you do **not** see a "Log in" button:
+
+```java
+assertThat(loginButton).not().isVisible();
+assertThat(loginButton).hasCount(0);
+```
+
 ### And more!
 
 You can find a complete list of all the available assertion types within [the 
@@ -132,7 +181,6 @@ some assertion types that we didn't cover above, which you might be interested
 in learning further about:
 
 * Whether an element is empty
-* Whether an element is visible on the page, or set as hidden
 * Whether a form field is editable, or whether it is read-only
 * Whether a form field currently has cursor focus
 * Whether an element has a particular ID or CSS property
@@ -173,16 +221,17 @@ Record yourself writing a Playwright test to accomplish the following:
 * Create a new Java class, and configure your initial JUnit/Playwright code.
 * Instruct Playwright to browse to https://makers.tech
 * Assert that the page title includes the text "Change Your Life".
-* Assert that there is a link on the page titled "Code of Conduct".
+* Assert that the page has a link which contains the text "Code of Conduct".
 * Assert that if you click the "Code of Conduct" link, you are taken to the 
 page https://makers.tech/code-of-conduct/ and that the page title includes
 the text "Code of Conduct".
 * Browse back to the homepage.
-* Assert that if you click the "FAQs" link, you are taken to the FAQs page.
+* Assert that if you click the "FAQs" link in the page header, you are taken to 
+the FAQs page.
 * On the FAQs page, enter "badger" in the search box, and confirm that the 
 results page contains the text "No results for badger".
 
-After you're done, [submit your recording
+After you're done, [submit your recording and Java file(s) 
 here.](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=java_play01)
 
 ## Summary
@@ -192,17 +241,18 @@ building blocks of most automation frameworks). You can locate elements on a
 page, perform actions on them, and assert that the page is in the correct
 state.
 
-But what about when things go wrong? We're going to move on to look at some 
-of the debugging tools that Playwright provides.
+Now it's time to start thinking about how you can make your tests more
+robust and reliable. We're going to look at using Page Object Models to
+reduce duplication, and increase the maintainability of your test code.
 
-[Next Challenge](07_debugging_playwright.md)
+[Next Challenge](08_page_object_models.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---
 
 **How was this resource?**  
-[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_assertions.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_assertions.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_assertions.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_assertions.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_assertions.md&prefill_Sentiment=😀)  
+[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_assertions.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_assertions.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_assertions.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_assertions.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_assertions.md&prefill_Sentiment=😀)  
 Click an emoji to tell us.
 
 <!-- END GENERATED SECTION DO NOT EDIT -->

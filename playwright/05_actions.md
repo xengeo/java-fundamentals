@@ -235,9 +235,10 @@ rejecting cookies) before taking the screenshot.
 Now you're equipped with all of the components that you need to understand in 
 order to automate your way around a website. All that's left is to plug in 
 some assertions, so that you can test whether your application is performing 
-in the way that you want it to.
+in the way that you want it to. But first, we're going to take an intermission 
+to talk about the power of debugging within Playwright.
 
-[Next Challenge](06_assertions.md)
+[Next Challenge](06_debugging_playwright.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

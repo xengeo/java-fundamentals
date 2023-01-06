@@ -137,6 +137,37 @@ know what assertions you want to make - you'll need to add those manually.
 
 </details>
 
+## Accessing Playwright objects from within a browser's Developer Tools
+
+The Playwright Inspector is a great standalone tool for identifying and 
+generating relevant Playwright code snippets, but you already know of another 
+place where you can interrogate the content of a webpage: the Developer Tools 
+panel in a web browser.
+
+For instance, suppose you want to know how many `<h2>` elements are on a page, 
+and what properties of the objects are exposed to Playwright. In a browser 
+which was launched by Playwright, open the console tab and type the following 
+command:
+
+```javascript
+playwright.$$('h2')
+```
+
+If there are any results found, these will be displayed in a treeview in the 
+console, allowing you to expand each object in turn to view its current state:
+
+```javascript
+(3) [h2, h2, h2]
+```
+
+You can find a complete list of the helper methods available within the 
+[Playwright "Debugging Selectors" 
+documentation](https://playwright.dev/java/docs/debug-selectors#using-devtools).
+
+This will only work for browser windows which were launched by Playwright (e.g. 
+when you open the Inspector, or when you use a `page.pause()` within a test). 
+Otherwise, your browser won't know what a "playwright" is!
+
 ## Saving videos of your tests
 
 In [exercise 2](02_setting_up_playwright.md), you learned how to save a 
@@ -221,16 +252,6 @@ Copy the code out of the Inspector window, and into a new Java class. Run the
 test from within IntelliJ, and check that it completes successfully (remember 
 that you're not actually performing any assertions yet).
 
-Finally, manually re-add the assertions from your previous challenge:
-
-* Assert that the homepage title includes the text "Change Your Life".
-* Assert that the Code Of Conduct page title includes the text "Code of 
-Conduct".
-* Assert that you arrive successfully on the FAQs page.
-* Assert that the search results page says "No results for badger".
-
-Check that the test runs and all of the assertions are passing.
-
 Finally, add "slow motion" mode to your Playwright instance, and instruct it 
 to wait for 2 seconds between steps. Then configure your test so that it 
 saves a video of the test run. 
@@ -244,14 +265,14 @@ will, it's time to start thinking about how you can make your tests more
 robust and reliable. We're going to look at using Page Object Models to
 reduce duplication, and increase the maintainability of your test code.
 
-[Next Challenge](08_page_object_models.md)
+[Next Challenge](07_assertions.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---
 
 **How was this resource?**  
-[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_debugging_playwright.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_debugging_playwright.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_debugging_playwright.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_debugging_playwright.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F07_debugging_playwright.md&prefill_Sentiment=😀)  
+[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_debugging_playwright.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_debugging_playwright.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_debugging_playwright.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_debugging_playwright.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fjava-fundamentals-with-intellij&prefill_File=playwright%2F06_debugging_playwright.md&prefill_Sentiment=😀)  
 Click an emoji to tell us.
 
 <!-- END GENERATED SECTION DO NOT EDIT -->

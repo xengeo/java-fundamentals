@@ -67,8 +67,8 @@ web automation into your Java applications.
 3. [Playwright in JUnit](./playwright/03_playwright_in_junit.md)
 4. [Locators](./playwright/04_locators.md)
 5. [Actions](./playwright/05_actions.md)
-6. [Assertions](./playwright/06_assertions.md)
-7. [Debugging Playwright](./playwright/07_debugging_playwright.md)
+6. [Debugging Playwright](./playwright/06_debugging_playwright.md)
+7. [Assertions](./playwright/07_assertions.md)
 8. [Page Object Models](./playwright/08_page_object_models.md)
 
 If you complete all of the above Playwright exercises, there are some 

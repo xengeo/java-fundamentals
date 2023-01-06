@@ -146,7 +146,7 @@ accepted.)
 If you'd like to learn more about regular expressions, [this 
 pill](pills/regular_expressions.md) contains further worked examples.
 
-### getByTestId()
+### getByTestId()
 
 ```java
 Locator passwordField = page.getByTestId("passwordField");
