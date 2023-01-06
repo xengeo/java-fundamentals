@@ -234,30 +234,6 @@ to writing the code yourself?
 
 <!-- OMITTED -->
 
-## Challenge
-
-Launch the Code Generator from the command-line, browse to the Makers website, 
-and use the Inspector to record the same actions that you performed in the 
-previous challenge:
-
-* Click the "Code of Conduct" link.
-* Browse back to the homepage.
-* Click the "FAQs" link.
-* Enter "badger" in the search box, and press Search.
-
-Look at the code that's been generated for you in the Inspector window. How 
-does it compare to the code that you wrote manually in the previous challenge?
-
-Copy the code out of the Inspector window, and into a new Java class. Run the 
-test from within IntelliJ, and check that it completes successfully (remember 
-that you're not actually performing any assertions yet).
-
-Finally, add "slow motion" mode to your Playwright instance, and instruct it 
-to wait for 2 seconds between steps. Then configure your test so that it 
-saves a video of the test run. 
-
-Run the test, and check that the video has been saved in the `videos` folder.
-
 ## Summary
 
 Now you're writing tests with Playwright, and bending the framework to your
