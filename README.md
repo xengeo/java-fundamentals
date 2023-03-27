@@ -14,7 +14,6 @@ In this module you will learn to:
 * Use Java's basic syntax.
 * Test-drive simple procedural programming problems using Java.
 * Test-drive programs in Java using Object Oriented Programming.
-* Automate requests and assertions in a web browser using Playwright.
 * Explain the main differences between Java and languages like Python, Ruby or Javascript.
 
 
@@ -52,30 +51,6 @@ Strengthen your skills in Java by test-driving a word-guessing game.
 5. [Part 5](./main/05_challenge_game_over.md)
 6. [Part 6](./main/06_challenge_view.md)
 7. [Part 7](./main/07_challenge_multiplayer.md)
-
-## Playwright
-
-_This section is required for the Quality Engineering Programme. If you're on 
-a different Apprenticeship programme, you can consider this an optional 
-section._
-
-Revisit the Playwright library to learn more about incorporating cross-browser 
-web automation into your Java applications.
-
-1. [About Playwright](./playwright/01_about_playwright.md)
-2. [Setting up Playwright](./playwright/02_setting_up_playwright.md)
-3. [Playwright in JUnit](./playwright/03_playwright_in_junit.md)
-4. [Locators](./playwright/04_locators.md)
-5. [Actions](./playwright/05_actions.md)
-6. [Debugging Playwright](./playwright/06_debugging_playwright.md)
-7. [Assertions](./playwright/07_assertions.md)
-8. [Page Object Models](./playwright/08_page_object_models.md)
-
-If you complete all of the above Playwright exercises, there are some 
-extension challenges available:
-
-9. [Emulating devices and locations](./playwright/09_emulating_devices_and_locations.md)
-10. [Advanced locators](./playwright/10_advanced_locators.md)
 
 ## Practicals and resources for self-directed learning
 
