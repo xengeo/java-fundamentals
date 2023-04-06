@@ -5,14 +5,16 @@ _Coaching this? Read the coach guidance
 
 Java is a very popular language in the software world. It can be used to build a lot of different kind of programs, including desktop, mobile and web applications. If you've previously learned a language like Python, Ruby or Javascript, Java is going to feel really different in a number of ways — but nothing that you cannot learn!
 
-In this module, you'll first see how to write and execute basic Java programs, and also learn about some important things such as how to use types and how to write tests using JUnit. You'll then build a more complex program (a CLI game) using object-oriented Java features.
+In this module, you'll first work through some introductory bites, each of which focuses on one thing, then you'll be challenged to bring everything together in an extended programming exercise.
+
+Very few people will complete all of the materials and that's fine but if you have any concerns please reach out to your coach ASAP.
 
 ## Learning objectives
 
 In this module you will learn to:
 
 * Use Java's basic syntax.
-* Test-drive simple procedural programming problems using Java.
+* Test-drive simple programming problems using Java.
 * Test-drive programs in Java using Object Oriented Programming.
 * Explain the main differences between Java and languages like Python, Ruby or Javascript.
 
@@ -25,22 +27,27 @@ Head to the [link](https://www.jetbrains.com/idea/download/#section=mac) and dow
 
 Once you have downloaded the `.dmg` file from the website you can drag it into your Applications folder and get started with the "Fizzbuzz" initial challenge.
 
-## Fizzbuzz and Bank
+## Phase 1
 
-Learn the basics of the syntax and testing of Java by working through two projects:
+Learn about basic Java syntax, SpringBoot and JUnit.
 
-1. [Fizzbuzz](fizzbuzz_and_bank/01_fizzbuzz.md)  
-   Use Java to test-drive a Fizzbuzz program. In this you will learn the
-   rudiments of the language, including how to run code, how to test code, how
-   to use branching and looping logic, and how to call and return values.
+1. [Getting Started](./bites/01_getting_started_bite.md)
+2. [Running Java](./bites/02_running_java_bite.md)
+3. [Writing Java](./bites/03_writing_java_bite.md)
+4. [Static Methods](./bites/04_static_methods_bite.md)
+5. [Instance Methods](./bites/06_instance_fields_bite.md)
+6. [Instance Fields](./bites/06_instance_fields_bite.md)
+7. [Arithmetic](./bites/07_arithmetic_bite.md)
+8. [Strings](./bites/08_strings_bite.md)
+9. [If Statements](./bites/09_ifs_bite.md)
+10. [Loops](./bites/10_loops_bite.md)
+11. [Data Structures - Part 1](./bites/11_data_structures_bite.md)
+12. [Data Structures - Part 2]()
+13. [Interfaces](./bites/13_interfaces_bite.md)
+14. [Test Driven Development](./bites/14_tdd_bite.md)
+15. [SpringBoot](./bites/15_spring_boot_bite.md)
 
-2. [Bank](fizzbuzz_and_bank/02_bank.md)  
-   Use Java to test-drive a bank application using Object Oriented Programming.
-   You will learn how to test-drive an application using objects and methods
-   that interact with each other, how to isolate your tests, and how to manage
-   state.
-
-## Challenges
+## Phase 2
 
 Strengthen your skills in Java by test-driving a word-guessing game.
 
