@@ -48,7 +48,7 @@ OpenJDK 64-Bit Server VM Temurin-17.0.5+8 (build 17.0.5+8, mixed mode)
 <details>
   <summary>Why is version 17 better than version 18, 19, etc..?</summary>
   <p>
-    OK so there isn't yet a version 200 but at there are newer versions than 17, so why not use them? Java versions are a bit unusual in that they are not all intended for long term support (LTS). Some versions are sort of temporary and will stop being updated sooner than others. The table below shows that 17 is the most recent version LTS version.
+    There are newer versions than 17, so why not use them? Java versions are a bit unusual in that they are not all intended for long term support (LTS). Some versions are sort of temporary and will stop being updated sooner than others. The table below shows that 17 is the most recent version LTS version.
   </p>
     <table>
       <tr>
