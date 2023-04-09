@@ -40,11 +40,11 @@ Java method definitions often involve a few different keywords. Here we needed t
 
 * `static` - static methods are the equivalent to Python's class methods. I.e. You don't need to create an instance of the class in order to call the method.
 
-* `void` - this is where things get really interesting! Java is a _strongly typed_ language which means we must declare what _type_ of thing methods will return. Our `main` method doesn't return anything though and we declare that using the `void` keyword. If you were writing a method that would return a `String` you'd use `String` instead of void. If the method was going to return an `Integer`, you'd use `Integer`... and so on.
+* `void` - this is where things get really interesting! Java is a _statically typed_ language which means we must declare what _type_ of thing methods will return. Our `main` method doesn't return anything though and we declare that using the `void` keyword. If you were writing a method that would return a `String` you'd use `String` instead of void. If the method was going to return an `Integer`, you'd use `Integer`... and so on.
 
 ### Is `String[] args` one argument or two?
 
-This is one argument. As mentioned above, Java is _strongly typed_. In addition to declaring what methods return, we also have to declare what they receive as arguments. In this case, we use `String[]` to declare that our `main` method will receive an array of `String`s. If it were going to receive a single `String` we'd change `String[] args` to `String arg`.
+This is one argument. As mentioned above, Java is _statically typed_. In addition to declaring what methods return, we also have to declare what they receive as arguments. In this case, we use `String[]` to declare that our `main` method will receive an array of `String`s. If it were going to receive a single `String` we'd change `String[] args` to `String arg`.
 
 <br>
 <details>
