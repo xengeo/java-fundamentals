@@ -109,7 +109,7 @@ You'll probably find that you complete the first few bites quickly whilst the la
 
 ## Phase 2
 
-Use the[Bank Challenge](./fizzbuzz_and_bank/02_bank.md) to consolidate and extend your Java skills.
+Use the [Bank Challenge](./fizzbuzz_and_bank/02_bank.md) to consolidate and extend your Java skills.
 
 ## Extension Challenges
 
