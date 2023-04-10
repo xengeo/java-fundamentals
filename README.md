@@ -107,7 +107,7 @@ You'll probably find that you complete the first few bites quickly whilst the la
 13. [Test Driven Development](./bites/13_tdd_bite.md)
 14. [SpringBoot](./bites/14_spring_boot_bite.md)
 
-## Phase 2
+## Phase 2 - Bank
 
 Use the [Bank Challenge](./fizzbuzz_and_bank/02_bank.md) to consolidate and extend your Java skills.
 
