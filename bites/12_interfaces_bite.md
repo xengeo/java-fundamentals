@@ -48,10 +48,12 @@ class Telephone implements NumberPad {
   // we've said the class implements the number pad interface
   // so now we have to define the three number pad methods
 
+  @Override
   public void pressNumber(Integer number) {
     this.numberToDial.add(number);
   }
 
+  @Override
   public void pressCancel() {
     this.numberToDial = new ArrayList<Integer>();
   }
@@ -66,14 +68,16 @@ You'll not be creating many interfaces in the near future, beyond this bite, but
 
 <!-- OMITTED -->
 
-[Demonstration Video]()
+[Demonstration Video](https://youtu.be/jAB5rTNDB8I)
 
 ## Exercise
 
+> Note that `removeEntry` and `readEntry` take `int`s not `Integer`s. Try changing them to `Integer`s to see what happens.
+
 Define an interface called `GenericDiary` which has the following methods:
 - `addEntry`, which takes one `String` argument  - a new diary entry
-- `removeEntry`, which takes one `Integer` argument - the index of the entry to be removed
-- `readEntry`, which takes one `Integer` argument - the index of the entry to be read
+- `removeEntry`, which takes one `int` argument - the index of the entry to be removed
+- `readEntry`, which takes one `int` argument - the index of the entry to be read
 
 Now define two classes, one called `TenDayDiary` and another called `InfiniteDiary`. Both of these classes should implement the `GenericDiary` interface but...
 
@@ -82,7 +86,7 @@ Now define two classes, one called `TenDayDiary` and another called `InfiniteDia
 
 > QUESTION: What benefit does this set up bring?
 
-[Example Solution]()
+[Example Solution](https://youtu.be/w6i2TK76mtg)
 
 ## Challenge
 

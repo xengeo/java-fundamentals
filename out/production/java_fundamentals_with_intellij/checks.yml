@@ -1,6 +1,0 @@
----
- checks:
-   -
-     pattern: "/vscode|vs code/"
-     reason: "This is an IntelliJ module, so no VS Code."
-     severity: warn

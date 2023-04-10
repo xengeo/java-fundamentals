@@ -87,7 +87,7 @@ This helpful behaviour of IntelliJ will come in handy if you're looking for guid
 
 #### Configuring SpringBoot
 
-Web frameworks tend to have a set of configuration files that are separate from the business logic and SpringBoot is no different. Next week, you'll use a few different configuration files so that, for example, your app can use two different databases - test and development - as needed.
+Web frameworks tend to have a set of configuration files that are separate from the business logic and SpringBoot is no different. You can also use multiple configuration files to, for example, specify different configurations for different environments.
 
 Here we're going to use one configuration file and it's called `application.properties` - find it in `src` -> `main` -> `resources` then add the following (without the comments).
 
@@ -116,22 +116,24 @@ public String index() {
 }
 ```
 
-To this, which will now render `home.html`.
+To this, which will now return a `ModelAndView`
 
 ```java
 @GetMapping("/")
-public String index() {
-	return "home";
+public ModelAndView index() {
+	return new ModelAndView("home");
 }
 ```
 
 Then restart your server and go back to `localhost:8080` to see your shiny new page.
 
+> The `Model` part of `ModelAndView` will make more sense once you start passing objects (models) through to your templates.
+
 ## Demonstration
 
 <!-- OMITTED -->
 
-[Demonstration Video]()
+[Demonstration Video](https://youtu.be/WdXXZuvkyAk)
 
 ## Exercise
 
@@ -139,7 +141,7 @@ Using your knowledge from previous modules about how web applications work and y
 
 * Add a link to home.html so that when a user clicks on it they see another page called `links.html`.
 
-[Example Solution]()
+[Example Solution](https://youtu.be/h29FjjVSasM)
 
 ## Challenge
 

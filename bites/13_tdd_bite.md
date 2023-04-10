@@ -118,7 +118,7 @@ As things stand, the compiler (and IntelliJ) will complain about the fact that t
 
 ## Demonstration
 
-[Demonstration Video]()
+[Demonstration Video](https://youtu.be/YkF5apE0oLE)
 
 ## Exercise
 
@@ -128,7 +128,7 @@ Based on the first test and what we've covered in previous sections, you know ev
 2. Make the first test that we wrote together pass
 3. Complete the program by test driving two more scenarios, one where player 2 guesses too high and one where player 2 guesses correctly.
 
-[Example Solution]()
+[Example Solution](https://youtu.be/2h5FEr9uJVc)
 
 ## Challenge
 
