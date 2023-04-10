@@ -75,6 +75,8 @@ FizzBuzz.play(15) => FizzBuzz
 
 ## Challenge
 
+> Please do a screen recording of yourself working on this challenge and submit it using [this form](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=java_ifs).
+
 [Do the leap year kata in Java](https://github.com/makersacademy/skills-workshops/tree/main/process_review/exercises/leap_years)
 
 
