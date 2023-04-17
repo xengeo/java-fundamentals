@@ -44,12 +44,12 @@ We're going to build a programme called `NumberGuesser` where the first player c
 
 Next, do `gradle init` to start creating a new Gradle project then...
 
-1. Select `2` to build an `application`
-2. Select `3` since your using Java
-3. Select `1: no - only one application project`
-4. Select `1: Groovy`
+1. Enter `2` to build an `application`
+2. Enter `3` since your using Java
+3. Enter `1: no - only one application project`
+4. Enter `1: Groovy`
 5. Enter `no` to not use the potentially unstable new features
-6. Select `1: JUnit 4` to set up your project with JUnit 4 installed
+6. Enter `1: JUnit 4` to set up your project with JUnit 4 installed
 7. Accept the default options that follow by pressing `return`
 
 You should now have a whole bunch of new files inside your `number_guesser` directory, if you created one. Some of you will have accidentally initialized a Gradle project in the wrong directory. Don't fret - just delete them all, make sure you then `cd` into the correct directory and try again :)
