@@ -68,7 +68,7 @@ You'll not be creating many interfaces in the near future, beyond this bite, but
 
 <!-- OMITTED -->
 
-[Demonstration Video](https://youtu.be/jAB5rTNDB8I)
+[Demonstration Video](https://youtu.be/Pb3je4fng4Q)
 
 ## Exercise
 
