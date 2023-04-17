@@ -140,13 +140,13 @@ For example...
 
 ```java
 FizzBuzz fizzBuzz = new FizzBuzz();
-fizzBuzz.for(1)
+fizzBuzz.forNumber(1)
 // => "1"
-fizzBuzz.for(3)
+fizzBuzz.forNumber(3)
 // => "Fizz"
-fizzBuzz.for(5)
+fizzBuzz.forNumber(5)
 // => "Buzz"
-fizzBuzz.for(15)
+fizzBuzz.forNumber(15)
 // => "FizzBuzz"
 ```
 
