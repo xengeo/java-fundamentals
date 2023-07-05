@@ -132,7 +132,7 @@ Based on the first test and what we've covered in previous sections, you know ev
 
 ## Challenge
 
-> Please do a screen recording of yourself working on this challenge and submit it using [this form](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=java_tdd).
+> Please do a screen recording of yourself working on this challenge and submit it using [this form](https://airtable.com/shrvo9ePjlwnaiLv5?prefill_Item=java_tdd).
 
 Test drive an implementation of `FizzBuzz` that gives you the `FizzBuzz` value for a single number.
 

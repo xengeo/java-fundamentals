@@ -54,7 +54,31 @@ menu.remove("huel")
 
 [Demonstration Video](https://youtu.be/mEwjt6l96JQ)
 
-## Exercise
+## Exercise 1
+
+If you don't already have one, define a class called `ScratchPad` so that you can do some scripting in the `main` method.
+
+Then, in the main `method`...
+- Assign an empty `HashMap<String, Integer>` to a variable called `scores`
+  - The keys will be quiz team names
+  - The values will be their scores
+- Practice using `put` to add quiz team scores to the `HashMap`
+- Practice using `get` to retrieve the score for a team
+
+[Example Solution](https://youtu.be/oMclCjDzcGo)
+## Exercise 2
+
+Change `scores` from `HashMap<String, Integer>` to `HashMap<String, Integer[]>` so that the values are all `Integer` arrays which can be used to give a breakdown of how a team scored in each of the four quiz rounds.
+
+Then...
+- Practice using `put` to add quiz team scores to the `HashMap`
+- Practice using `get` to retrieve the scores for a team
+
+[Example solution](https://youtu.be/FOuxIG-F4Vg)
+
+## Exercise 3
+
+This one is quite challenging, so don't be disheartened if you get stuck and have to check the example solution, but do take a moment to digest the video before moving on.
 
 Define a class called `RockPaperScissors` that has
 - a static field called `rules` which holds a nested `HashMap` (see below for further guidance)
@@ -67,6 +91,8 @@ The `rules` `HashMap` should work like this...
 rules.get("rock").get("paper")
 // => player 1 loses
 ```
+
+The first `.get` returns a `HashMap` and the second `.get` returns the outcome. Building the `rules` `HashMap` will require a bit of planning and several programmatic steps.
 
 [Example Solution](https://youtu.be/-sOWDLdQ574)
 
