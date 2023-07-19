@@ -92,6 +92,10 @@ Once you have downloaded the `.dmg` file from the website you can drag it into y
 
 You'll probably find that you complete the first few bites quickly whilst the last few will take a bit longer. Don't feel that you need to memorise everything before moving on - you can always come back here for a recap. You'll also find that several concepts come up repeatedly as you progress, so there will be opportunities to get further practice.
 
+Some of these challenges include Process Feedback Challenges, in which you share
+resources like recordings or files with your coach(es) for feedback. These are
+tagged with a :satellite:.
+
 1. [Running Java](./bites/01_running_java_bite.md)
 2. [Writing Java](./bites/02_writing_java_bite.md)
 3. [Static Methods](./bites/03_static_methods_bite.md)
@@ -99,12 +103,12 @@ You'll probably find that you complete the first few bites quickly whilst the la
 5. [Instance Fields](./bites/05_instance_fields_bite.md)
 6. [Arithmetic](./bites/06_arithmetic_bite.md)
 7. [Strings](./bites/07_strings_bite.md)
-8. [If Statements](./bites/08_ifs_bite.md)
+8. [If Statements](./bites/08_ifs_bite.md) :satellite:
 9. [Loops](./bites/09_loops_bite.md)
 10. [Data Structures - Part 1](./bites/10_data_structures_1_bite.md)
 11. [Data Structures - Part 2](./bites/11_data_structures_2_bite.md)
 12. [Interfaces](./bites/12_interfaces_bite.md)
-13. [Test Driven Development](./bites/13_tdd_bite.md)
+13. [Test Driven Development](./bites/13_tdd_bite.md) :satellite:
 14. [SpringBoot](./bites/14_spring_boot_bite.md)
 
 ## Phase 2 - Bank
