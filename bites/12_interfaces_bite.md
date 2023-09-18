@@ -12,11 +12,13 @@ Learn to recognise and explain interfaces.
 
 ## Introduction
 
-Java Interfaces don't really have a Python equivalent, so they're going to require some time and effort to properly understand and I'm going to use an analogy to start with.
+Calculators, ATMs and telephones (oldish landline telephones) all have number 
+pads that feature the numbers 0 to 9. These number pads are _interfaces_ 
+between the a user and the inner workings of each device.
 
-Calculators, ATMs and telephones (oldish landline telephones) all have number pads that feature the numbers 0 to 9. These number pads are _interfaces_ between the a user and the inner workings of each device.
-
-If you wanted to design a new machine that also has a number pad, you could say in your designs that the machine should _implement_ `number pad` interface. Then, whoever builds it would have a really clear understanding of what's needed.
+If you wanted to design a new machine that also has a number pad, you could say 
+in your designs that the machine should _implement_ `number pad` interface. 
+Then, whoever builds it would have a really clear understanding of what's needed.
 
 > To empathise an important point: the inner workings of each device with the number pad interface are different. Pressing the number 1 on a calculator does not do the same thing as pressing the number 1 on an ATM.
 

@@ -12,13 +12,16 @@ Learn to use some of Java's data structures
 
 ## Introduction
 
-There are lots of different data structures in Java but they're not all going to be useful in the immediate future. Here, you'll learn about the Java equivalents of Python's Lists.
+There are lots of different data structures in Java but they're not all going 
+to be useful in the immediate future. Here, you'll learn about creating lists
+in Java.
 
 > For this section, create a class called `Sandbox` so that you can write some experimental code in the `main` method.
 
 ## `ArrayList`s
 
-The Java equivalent of a Python list is an ArrayList. Let's see some examples...
+Java stores its list data in an object called an ArrayList. Let's see some 
+examples...
 
 ```java
 ArrayList<String> contentsOfMyPocket = new ArrayList<String>();
@@ -65,7 +68,11 @@ So there are four methods to remember here...
 * `get` to read / get items
 * `set` to change / set items
 
-Finally, it's useful to know how to iterate through an ArrayList. There are a few options - let's go with the most python-like one for now. If you already have an ArrayList of `pebbles`, you could do this...
+Finally, it's useful to know how to iterate through an ArrayList. There are a 
+few options, but for now we'll go with one of the simplest iterators to 
+understand (it'll look very familiar to you if you've worked with Python). 
+
+If you already have an ArrayList of `pebbles`, you could do this...
 
 ```java
 for (String pebble : pebbles) {
@@ -73,9 +80,12 @@ for (String pebble : pebbles) {
 }
 ```
 
-Note the typing crops up again! Within the for loop, we use the variable `pebble` to hold each item as we iterate through the ArrayList. When declaring `pebble` we have to state what type of thing it will hold - in this case, by typing `String pebble`.
+Note the typing crops up again! Within the for loop, we use the variable 
+`pebble` to hold each item as we iterate through the ArrayList. When declaring 
+`pebble` we have to state what type of thing it will hold - in this case, by 
+typing `String pebble`.
 
-## Arrays
+## Arrays
 
 Java Arrays are a lot like `ArrayList`s but there is a crucial difference - Arrays are of fixed length. So, when you create a new empty Array, you need to state how many things it needs to hold. For example...
 

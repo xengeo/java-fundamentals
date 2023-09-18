@@ -12,16 +12,17 @@ Learn to use loops in Java.
 
 ## Introduction
 
-In this section, you'll learn about two type of loop, both of which you've seen before in Python
+In this section, you'll learn about two type of loop, both of which you will 
+be familiar with from other programming languages:
 
 * for loops
 * while loops
 
 ## For Loops
 
-Python has it's own special way of doing for loops, whereas Java uses a more generic (or classic) approach. I.e. You'll see for loops that are very similar to Java's in many other languages.
+You'll see `for` loops that are very similar to Java's in many other languages.
 
-Here's an example of a for loop in Java
+Here's an example of a `for` loop in Java:
 
 ```java
 for(Integer counter = 1; counter < 10; counter++) {
@@ -43,7 +44,8 @@ This loop can be considered as having 4 parts.
 
 ## While Loops
 
-Java's while loops are more similar to Python's and they're a bit like scrambled for loops - they have the same basic components but the structure is a bit different. Here's an example.
+Java's `while` loops are a bit like scrambled `for` loops - they have the same 
+basic components but the structure is a bit different. Here's an example:
 
 ```java
 Integer counter = 0;

@@ -10,7 +10,9 @@ Learn to use if statements.
 
 ## Introduction
 
-In this section, you'll learn how to build if statements in Java. Let's start by looking at an example and imagine that `weather` is normally set to either `"sunny"`, `"rainy"` or `"cold"`
+In this section, you'll learn how to build if statements in Java. Let's start by 
+looking at an example and imagine that `weather` is normally set to either 
+`"sunny"`, `"rainy"` or `"cold"`
 
 ```java
 if(weather == "sunny") {
@@ -24,14 +26,16 @@ if(weather == "sunny") {
 }
 ```
 
-Broadly speaking they're the same as if statements in Python.
+Broadly speaking, the rules for using if statements are the same as most other
+languages:
 
 - You must start with an `if`
 - You can include an `else if`
 - You can include an `else`
 
-There are, however, some differences in the syntax (as you would expect).
-- `else if` is the equivalent of `elif`
+If you've used Python before at Makers, you'll want to be aware of a few subtle
+differences in the syntax:
+- `else if` is used instead of `elif`
 - You need brackets `()` around conditions i.e. After `if` and `else if`
 - You need curly braces `{}` around code blocks
 

@@ -53,7 +53,8 @@ public class HelloWorldController {
 
 #### Imports
 
-These are just like Python imports. For your controller, you needed some tools that are defined in the Spring Web dependency - `GetMapping` and `RestController`.
+For your controller, you needed to import some tools that are defined in the 
+Spring Web dependency - `GetMapping` and `RestController`.
 
 #### Annotations
 

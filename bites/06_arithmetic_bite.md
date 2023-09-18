@@ -14,7 +14,8 @@ Learn to do some maths with Java
 
 > If you hate maths, fear not - we're going to do pretty simple stuff here :)
 
-Doing maths in Java is as simple as it is to do maths in Python. The common operators are exactly what you would probably expect them to be.
+Java makes things simple, as the common operators are exactly what you would 
+probably expect them to be.
 
 ```java
 // addition

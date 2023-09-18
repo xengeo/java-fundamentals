@@ -38,7 +38,8 @@ Java method definitions often involve a few different keywords. Here we needed t
 
 * `public` - makes the method publicly accessible. One alternative would be. This means it can be used from outside the Message class.
 
-* `static` - static methods are the equivalent to Python's class methods. I.e. You don't need to create an instance of the class in order to call the method.
+* `static` - static methods are methods where you don't need to create an 
+instance of the class in order to call the method.
 
 * `void` - this is where things get really interesting! Java is a _statically typed_ language which means we must declare what _type_ of thing methods will return. Our `main` method doesn't return anything though and we declare that using the `void` keyword. If you were writing a method that would return a `String` you'd use `String` instead of void. If the method was going to return an `Integer`, you'd use `Integer`... and so on.
 

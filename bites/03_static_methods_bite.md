@@ -10,7 +10,9 @@ Learn to define and call your own static methods
 
 ## Introduction
 
-In the previous step we learned that static methods are like Python class methods - they're called on a class, rather than on an instance of a class. We didn't, however, see any examples beyond `main`, which is called automatically.
+In the previous step we learned that static methods are called on a class, 
+rather than on an instance of a class. We didn't, however, see any examples 
+beyond `main`, which is called automatically.
 
 In this section, we'll define and call some of our own static methods.
 
@@ -70,19 +72,21 @@ class Announcement {
 
 ## Exercise
 
-Define a new class called `Announcement`, give it a static method called `celebration` and call it like this inside the `main` method.
+Define a new class called `Announcement`, give it a static method called 
+`celebration` and call it like this inside the `main` method.
 
 ```java
 System.out.println(Announcement.celebration())
 ```
 
-> HINT: Like Python, Java uses the `return` keyword ;)
+> HINT: Java, like many other languages, uses the `return` keyword ;)
 
 [Example Solution](https://youtu.be/MQW2kaGTaAA)
 
 ## Challenge
 
-Add more static methods to the `Announcement` class, all of which print appropriate messages of your choosing, then call them inside the main method.
+Add more static methods to the `Announcement` class, all of which print 
+appropriate messages of your choosing, then call them inside the main method.
 
 * `changeOfPlan`
 * `apology`

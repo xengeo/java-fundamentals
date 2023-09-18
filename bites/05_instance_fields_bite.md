@@ -28,7 +28,8 @@ Passing values when creating an instance of a class is pretty straightforward, j
 Post post = new Post("Hello, I'm really enjoying my holidays!");
 ```
 
-And if you needed to pass in the name of the author as well, you could so something like this...
+And if you needed to pass in the name of the author as well, you could do 
+something like this:
 
 ```java
 Post post = new Post("Hello, I'm really enjoying my holidays!", "Phileas Fogg");
@@ -36,7 +37,9 @@ Post post = new Post("Hello, I'm really enjoying my holidays!", "Phileas Fogg");
 
 ### Assigning values to fields
 
-In python, you used the `__init__` method to grab values that were passed during instantiation and assign them to instance variables. The Java equivalent is called a constructor method and it's name is always the same as the name of the class. For example...
+When creating an instance of a class, you can use a constructor method to grab
+values that are passed in, and assign them to instance variables. The 
+constructor method always has the same name as the class. For example:
 
 ```java
 class Post {
@@ -48,21 +51,18 @@ class Post {
 }
 ```
 
-In python, you used the keyword `self` to refer to the current instance, when setting instance vars.
-
-```python
-self.content = content
-self.author = author
-```
-
-The Java equivalent is `this`.
+Whenever you want to refer to an instance variable within the current instance, 
+Java utilises the keyword `this` (in the same way that you might use `self` in
+Ruby or Python).
 
 ```java
 this.content = content
 this.author = author
 ```
 
-But, what about the _typing_? Don't we have to declare the _type_ for `content` and `author`? Yes, we do! See below for the full example in Java, which includes type declarations.
+But, what about the _typing_? Don't we have to declare the _type_ for `content` 
+and `author`? Yes, we do! See below for the full example in Java, which includes 
+type declarations.
 
 ```java
 class Post {

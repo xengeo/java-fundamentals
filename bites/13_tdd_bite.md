@@ -14,15 +14,22 @@ Learn to TDD with Java and JUnit
 
 If you've craving tests, this bite will sate your appetite.
 
-Here, you'll learn how to test drive a single class using JUnit, the most popular testing framework for Java but your first task will be to install a tool called Gradle.
+Here, you'll learn how to test drive a single class using JUnit, the most 
+popular testing framework for Java but your first task will be to install a 
+tool called Gradle.
 
 ### Gradle
 
-Back when you were using Python, you used a bunch of different tools to manage dependencies and Java has it's own equivalents - Gradle and Maven.
+Java has a variety of tools available to help manage dependencies within your 
+projects, with the most common being Gradle and Maven.
 
-Here, and in the coming weeks, you'll learn how to use Gradle to manage your dependencies. You'll also use it to perform some tasks like run code and tests - so it's actually a bit more than a dependency management tool!
+For the time being, you'll learn how to use Gradle to manage your dependencies. 
+You'll also use it to perform some tasks like run code and tests - so it's 
+actually a bit more than a dependency management tool!
 
-Start by installing gradle. If you see any errors, reach out to your peers and if they can't help please reach out to your coach. I.e. Don't spend a long time stuck at this point.
+Start by installing gradle. If you see any errors, reach out to your peers and 
+if they can't help please reach out to your coach. (Don't spend a long time 
+stuck at this point.)
 
 ```shell
 ; brew install gradle
