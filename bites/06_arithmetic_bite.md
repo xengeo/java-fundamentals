@@ -1,4 +1,4 @@
-# arithmetic
+# Arithmetic
 
 _**This is a Makers Bite.** Bites are designed to train specific skills or
 tools. They contain an intro, a demonstration video, some exercises with an
@@ -6,9 +6,7 @@ example solution video, and a challenge without a solution video for you to test
 your learning. [Read more about how to use Makers
 Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
-<!-- OMITTED -->
-
-Learn to do some maths with Java
+In this bite, you will learn to do some maths with Java!
 
 ## Introduction
 
@@ -36,7 +34,8 @@ probably expect them to be.
 
 ## Exercise
 
-Define a class called `Order` which has one instance Integer field called `total` and three instance methods:
+Define a class called `Order` which has one instance Integer field called 
+`total` and three instance methods:
 
 * addAmount -> takes one Integer and adds it to the total
 * addDiscount -> takes one Integer and subtracts it from the total
@@ -48,11 +47,13 @@ Use all these methods in the `main` to build an order and print the total.
 
 ## Challenge
 
-Define a class called `Discounter` which has one Integer field called `discount` and one instance method:
+Define a class called `Discounter` which has one Integer field called 
+`discount` and one instance method:
 
-* applyTo -> takes an integer, subtracts the `discount` and returns the new value
+* applyTo -> takes an integer, subtracts the `discount` and returns the 
+new value
 
-For example...
+For example:
 
 ```java
 Discounter discounter = new Discounter(20);
@@ -62,8 +63,13 @@ discounter.applyTo(200)
 // returns 180
 ```
 
-Inside the `main` method, create an instance of `Discounter` use the `applyTo` method and print the return values. As an added challenge, print some strings before and after the discount to explain what's going on.
+Inside the `main` method, create an instance of `Discounter` use the `applyTo` 
+method and print the return values. As an added challenge, print some strings 
+before and after the discount to explain what's going on.
 
+If you want to get even more advanced, try changing the behaviour of your
+Discounter so that it applies a _percentage_ discount instead of a fixed 
+amount.
 
 [Next Challenge](07_strings_bite.md)
 

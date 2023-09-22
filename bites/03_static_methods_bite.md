@@ -6,7 +6,7 @@ example solution video, and a challenge without a solution video for you to test
 your learning. [Read more about how to use Makers
 Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
-Learn to define and call your own static methods
+In this bite, you will learn to define and call your own static methods.
 
 ## Introduction
 
@@ -28,12 +28,13 @@ class Announcement {
 
 ### Defining Static Methods
 
-In the example below, we define a static method called alert and then call it inside the main method.
+In the example below, we define a static method called `alert` and then call 
+it from inside the `main` method.
 
 ```java
 class Announcement {
 
-  // a static method that returns nothing but prints a String
+  // a static method that prints a String, but returns nothing
   public static void alert() {
     System.out.println("Be careful not to forget your main method!");
   }
@@ -41,18 +42,17 @@ class Announcement {
   // a normal main method signature
   public static void main(String[] args) {
     // call our static method
-    Announcement.alert()
+    Announcement.alert();
   }
-
 }
 ```
 
-And if we wanted to make `alert` take an argument, we could do this...
+And if we wanted to make `alert` take an argument, we could do this:
 
 ```java
 class Announcement {
 
-  // a static method that returns nothing but prints a String
+  // a static method that prints a String, but returns nothing
   public static void alert(String message) {
     System.out.println(message);
   }
@@ -60,9 +60,8 @@ class Announcement {
   // a normal main method signature
   public static void main(String[] args) {
     // call our static method
-    Announcement.alert("All trains to London are running early - good luck!")
+    Announcement.alert("All trains to London are running early - good luck!");
   }
-
 }
 ```
 
@@ -76,7 +75,7 @@ Define a new class called `Announcement`, give it a static method called
 `celebration` and call it like this inside the `main` method.
 
 ```java
-System.out.println(Announcement.celebration())
+System.out.println(Announcement.celebration());
 ```
 
 > HINT: Java, like many other languages, uses the `return` keyword ;)
@@ -86,13 +85,13 @@ System.out.println(Announcement.celebration())
 ## Challenge
 
 Add more static methods to the `Announcement` class, all of which print 
-appropriate messages of your choosing, then call them inside the main method.
+appropriate messages of your choosing, then call them from inside the `main` 
+method.
 
 * `changeOfPlan`
 * `apology`
 * `politeNotice`
 * `helpNeeded`
-
 
 [Next Challenge](04_instance_methods_bite.md)
 

@@ -6,22 +6,22 @@ example solution video, and a challenge without a solution video for you to test
 your learning. [Read more about how to use Makers
 Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
-<!-- OMITTED -->
-
-Learn to use some of Java's data structures
+In this bite, you will learn how to store multiple data items within a single 
+variable in Java, by using array-based data structures.
 
 ## Introduction
 
-There are lots of different data structures in Java but they're not all going 
+There are lots of different data structures in Java, but they're not all going 
 to be useful in the immediate future. Here, you'll learn about creating lists
 in Java.
 
-> For this section, create a class called `Sandbox` so that you can write some experimental code in the `main` method.
+> For this section, create a class called `Sandbox` so that you can write some 
+> experimental code in the `main` method.
 
 ## `ArrayList`s
 
 Java stores its list data in an object called an ArrayList. Let's see some 
-examples...
+examples:
 
 ```java
 ArrayList<String> contentsOfMyPocket = new ArrayList<String>();
@@ -36,7 +36,10 @@ reallyGreatNumbers.add(7);
 reallyGreatNumbers.add(11);
 ```
 
-Notice how, in each case, we have to declare what type of thing the ArrayList will contain. You might be wondering what would happen if you tried to add an Integer to `contentsOfMyPocket`. What would you expect to happen? Give it a try in the `main` method of your `Sandbox` class.
+Notice how, in each case, we have to declare what type of thing the ArrayList
+will contain. You might be wondering what would happen if you tried to add an 
+Integer to `contentsOfMyPocket`. What would you expect to happen? (Give it a 
+try in the `main` method of your `Sandbox` class.)
 
 Now let's see how to read, change and remove ArrayList items.
 
@@ -47,22 +50,23 @@ reallyGreatNumbers.add(3);
 reallyGreatNumbers.add(5);
 reallyGreatNumbers.add(7);
 reallyGreatNumbers.add(11);
-// you can read / get an item using its index
-reallyGreatNumbers.get(0)
+// you can read / get an item using its list index
+reallyGreatNumbers.get(0);
 // => 3
-reallyGreatNumbers.get(1)
+reallyGreatNumbers.get(1);
 // => 5
 
-// you can change an item using its index and the new value
-reallyGreatNumbers.set(0, 11)
+// you can change an item using its list index and the new value
+reallyGreatNumbers.set(0, 11);
 // would change the first item to 11
 
-// you can remove an item using its index
-reallyGreatNumbers.remove(0)
+// you can remove an item using its list index
+reallyGreatNumbers.remove(0);
 // would remove the first item
 ```
 
-So there are four methods to remember here...
+So there are four methods to remember here:
+
 * `add` to add items
 * `remove` to remove items
 * `get` to read / get items
@@ -72,7 +76,7 @@ Finally, it's useful to know how to iterate through an ArrayList. There are a
 few options, but for now we'll go with one of the simplest iterators to 
 understand (it'll look very familiar to you if you've worked with Python). 
 
-If you already have an ArrayList of `pebbles`, you could do this...
+If you already have an ArrayList of `pebbles`, you could do this:
 
 ```java
 for (String pebble : pebbles) {
@@ -87,59 +91,77 @@ typing `String pebble`.
 
 ## Arrays
 
-Java Arrays are a lot like `ArrayList`s but there is a crucial difference - Arrays are of fixed length. So, when you create a new empty Array, you need to state how many things it needs to hold. For example...
+Java Arrays are a lot like `ArrayList`s but there is a crucial difference - 
+Arrays are of a fixed length. So, when you create a new empty Array, you need 
+to state how many things it needs to hold. For example:
 
 ```java
 String[] plantsIHaveKilled = new String[100];
 ```
 
-The `String[100]` bit means that we want an empty array that will eventually hold Strings and that it should have 100 empty slots. If you end up killing more than 100 plants, you'll need to create a new Array with larger capacity and copy everything over.
+The `String[100]` bit means that we want an empty array that will eventually 
+hold Strings and that it should have 100 empty slots. If you end up killing 
+more than 100 plants, you'll need to create a new Array with larger capacity 
+and copy everything over.
 
 > Dev: Oh Java, why must you make everything so complicated??
 >
-> Java: Hi - Java here! When you ask me to create a `String[]` I'll allocate just enough memory for that data structure and no more. If you need your array to hold 10 Strings, that's fine, but I'm not going to give you 11 Strings worth of memory as that would be a waste. If, however, you're genuinely unsure how many things your array will need to hold, I will gladly create an ArrayList for you but you should be aware that it will take up a lot more memory than, for example, a `String[5]`. So bear that in mind, particularly if you care about performance.
+> Java: Hi - Java here! When you ask me to create a `String[]` I'll allocate 
+> just enough memory for that data structure and no more. If you need your 
+> array to hold 10 Strings, that's fine, but I'm not going to give you 11 
+> Strings worth of memory as that would be a waste. If, however, you're 
+> genuinely unsure how many things your array will need to hold, I will gladly 
+> create an ArrayList for you, but you should be aware that it will take up a 
+> lot more memory than, for example, a `String[5]`. So bear that in mind, 
+> particularly if you care about performance.
 >
 > Dev: Thanks, Java, you're a bit fussy but I kind of like you.
 
-One nice thing about arrays is that you can create and manipulate them in a more concise manner.
+One nice thing about arrays is that you can create and manipulate them in a 
+more concise manner.
 
 ```java
 // create an array of four Strings
-String[] famousCats = {"Larry", "Palmerston", "Geronimo", "Cat Stevens"}
+String[] famousCats = {"Larry", "Palmerston", "Geronimo", "Cat Stevens"};
 
 // get the first item
-famousCats[0]
+famousCats[0];
 // => "Larry"
 
 // change the first item
-famousCats[0] = "Grumpy Cat"
+famousCats[0] = "Grumpy Cat";
 
 // remove the first item by replacing it will `null`
-famousCats[0] = null
+famousCats[0] = null;
 ```
 
-> You'll see both Arrays and `ArrayList`s used in the wild. At some point, you'll probably make the wrong choice - it happens to us all - then you'll get feedback and learn from the mistake :)
+> You'll see both Arrays and `ArrayList`s used in the wild. At some point, 
+you'll probably make the wrong choice - it happens to us all - then you'll get 
+feedback and learn from the mistake :)
 
 ## Demonstration
-
-<!-- OMITTED -->
 
 [Demonstration Video](https://youtu.be/5Q-nlzxhEd8)
 
 ## Exercise
 
-Define a class called `ReadingList` that has an instance field called `unread` that holds an Array of Strings. Also, define a method called `add` which takes one argument (a book title) and adds it to the first empty slot in your `unread` Array. NOTE: We're using Arrays here, not `ArrayList`s. This will make the task of adding items a bit more complex!
+Define a class called `ReadingList` that has an instance field called `unread` 
+that holds an Array of Strings. Also, define a method called `add` which takes 
+one argument (a book title) and adds it to the first empty slot in your 
+`unread` Array. NOTE: We're using Arrays here, not `ArrayList`s. This will 
+make the task of adding items a bit more complex!
 
 [Example Solution](https://youtu.be/etPO8WRNB34)
 
 ## Challenge
 
-Define a class called Queue which has an instance field called `people` that holds an ArrayList of Strings. Each item in the `people` ArrayList will be the name of a person in a queue. The class should have three methods.
+Define a class called Queue which has an instance field called `people` that 
+holds an ArrayList of Strings. Each item in the `people` ArrayList will be the 
+name of a person in a queue. The class should have three methods.
 
 * `add` - which adds people to the end of the `people` ArrayList
 * `next` - which gets and removes the first person in the `people` ArrayList
 * `state` - which prints a list of all the `people` who are currently queuing
-
 
 [Next Challenge](11_data_structures_2_bite.md)
 

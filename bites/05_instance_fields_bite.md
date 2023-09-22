@@ -6,15 +6,16 @@ example solution video, and a challenge without a solution video for you to test
 your learning. [Read more about how to use Makers
 Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
-<!-- OMITTED -->
-
-Learn how to use instance fields
+In this bite, you will learn how to use instance fields in Java.
 
 ## Introduction
 
-You might have noticed that there's something crucial missing from what we've covered so far - instance variables!
+You might have noticed that there's something crucial missing from what we've 
+covered so far - instance variables!
 
-In Java, instance variables (properties that belong to a specific instance of a class) are called instance fields. Using instance fields requires you to learn three things...
+In Java, instance variables (properties that belong to a specific instance of 
+a class) are called instance fields. Using instance fields requires you to 
+learn three things:
 
 1. How to pass values in when creating instances of a class
 2. How to assign those values to instance fields
@@ -22,7 +23,10 @@ In Java, instance variables (properties that belong to a specific instance of a 
 
 ### Passing values
 
-Passing values when creating an instance of a class is pretty straightforward, just put them between the parentheses. Imagine we wanted to create an instance of a class called `Post`, providing some content. The code would look something like this...
+Passing values when creating an instance of a class is pretty straightforward: 
+just put them between the parentheses. Imagine we wanted to create an instance 
+of a class called `Post`, providing some content. The code would look something 
+like this:
 
 ```java
 Post post = new Post("Hello, I'm really enjoying my holidays!");
@@ -44,7 +48,7 @@ constructor method always has the same name as the class. For example:
 ```java
 class Post {
   // a constructor method - is it an instance method or a static method?
-  // I've defined it to take two args, content and author
+  // It's defined to take two arguments: content and author
   public Post(String content, String author) {
     // assign instance fields
   }
@@ -56,8 +60,8 @@ Java utilises the keyword `this` (in the same way that you might use `self` in
 Ruby or Python).
 
 ```java
-this.content = content
-this.author = author
+this.content = content;
+this.author = author;
 ```
 
 But, what about the _typing_? Don't we have to declare the _type_ for `content` 
@@ -87,7 +91,8 @@ class Post {
 
 ## Exercise
 
-Define a class called Quiz. When instantiated, it should take two questions as arguments. For example...
+Define a class called Quiz. When instantiated, it should take two questions as 
+arguments, like so:
 
 ```java
 new Quiz("what is the capital of Burkina Faso?", "What is the capital of Bhutan?");
@@ -98,20 +103,21 @@ There should be two instance methods:
 * getQuestionOne -> returns the first question
 * getQuestionTwo -> returns the second question
 
-Inside the `main` method, create an instance of Quiz, call the two instance methods and print the return values.
+Inside the `main` method, create an instance of Quiz, call the two instance 
+methods and print the return values.
 
 [Example Solution](https://youtu.be/oFkHM5HFzZk)
 
 ## Challenge
 
-Create a class called `ProgrammingLanguage` which has three instance fields
+Create a class called `ProgrammingLanguage` which has three instance fields:
 
 * `String name`
 * `Integer yearOfCreation`
 * `String creator`
 
-In the main method, create three instances of the `ProgrammingLanguage` class and print the three instance fields of each one.
-
+In the main method, create three instances of the `ProgrammingLanguage` class 
+and print the three instance fields of each one.
 
 [Next Challenge](06_arithmetic_bite.md)
 

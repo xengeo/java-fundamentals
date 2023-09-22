@@ -27,7 +27,7 @@ transactions and then print a bank statement to the terminal.
 
 Here are the requirements:
 
-* Implement deposits and withdrawals
+* Implement deposits and withdrawals.
 * Implement an account statement that prints a heading row, and the date, amount
   and balance of each transaction, most recent first.
 * You don't need to implement a command-line or user interface, test-driving

@@ -3,11 +3,18 @@
 _Coaching this? Read the coach guidance
 [here.](https://github.com/makersacademy/slug/blob/main/materials/universe/language_intros/challenges/java_fundamentals_with_intellij/README.ed.md)_
 
-Java is a very popular language in the software world. It can be used to build a lot of different kind of programs, including desktop, mobile and web applications. If you've previously learned a language like Python, Ruby or Javascript, Java is going to feel really different in a number of ways — but nothing that you cannot learn!
+Java is a very popular language in the software world. It can be used to build 
+a lot of different kinds of programs, including desktop, mobile and web 
+applications. If you've previously learned a language like Python, Ruby or 
+JavaScript, Java is going to feel really different in a number of ways — but 
+nothing that you cannot learn!
 
-In this module, you'll first work through some introductory bites, each of which focuses on one thing, then you'll be challenged to bring everything together in an extended programming exercise.
+In this module, you'll first work through some introductory bites, each of 
+which focuses on one thing, then you'll be challenged to bring everything 
+together in an extended programming exercise.
 
-Very few people will complete all of the materials and that's fine but if you have any concerns please reach out to your coach ASAP.
+Very few people will complete all of the materials (and that's fine) but if 
+you have any concerns, please reach out to your coach ASAP.
 
 ## Learning objectives
 
@@ -16,12 +23,16 @@ In this module you will learn to:
 * Use Java's basic syntax.
 * Test-drive simple programming problems using Java.
 * Test-drive programs in Java using Object Oriented Programming.
-* Explain the main differences between Java and languages like Python, Ruby or Javascript.
+* Explain the main differences between Java and languages like Python, Ruby or 
+JavaScript.
 
 
 ## Install a Java Development Kit
 
-Java Development Kits (JDK) contain a bunch of tools (including a version of Java) that you need for running Java code on your machine. The only thing to be aware of here is the version that you're downloading - right now, version 17 is the best choice even though there are more recent versions.
+Java Development Kits (JDK) contain a bunch of tools (including a version of 
+Java) that you need for running Java code on your machine. The only thing to be 
+aware of here is the version that you're downloading - right now, version 17 
+is the best choice (even though there are more recent versions).
 
 Luckily, you can install version 17 using homebrew :)
 
@@ -29,13 +40,13 @@ Luckily, you can install version 17 using homebrew :)
 ; brew install openjdk@17
 ```
 
-Then, do this to verify that everything worked
+Then, do this to verify that everything worked:
 
 ```shell
 ; java --version
 ```
 
-And you should see output a bit like this
+And you should see output that's a bit like this:
 
 ```shell
 openjdk 17.0.5 2022-10-18
@@ -43,7 +54,7 @@ OpenJDK Runtime Environment Temurin-17.0.5+8 (build 17.0.5+8)
 OpenJDK 64-Bit Server VM Temurin-17.0.5+8 (build 17.0.5+8, mixed mode)
 ```
 
->  the most important thing is that you have a version which starts with `17`. Other details might be different and that's fine.
+>  The most important thing is that you have a version which starts with `17`. Other details might be different and that's fine.
 <br>
 <details>
   <summary>Why is version 17 better than version 18, 19, etc..?</summary>
@@ -55,6 +66,11 @@ OpenJDK 64-Bit Server VM Temurin-17.0.5+8 (build 17.0.5+8, mixed mode)
         <th>Version</th>
         <th>Release</th>
         <th>End Of Active Support</th>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>19 Sept 2023</td>
+        <td>March 2024</td>
       </tr>
       <tr>
         <td>20</td>
@@ -71,7 +87,7 @@ OpenJDK 64-Bit Server VM Temurin-17.0.5+8 (build 17.0.5+8, mixed mode)
         <td>22 March 2022</td>
         <td>19 Sept 2023</td>
       </tr>
-      <tr style="color: green">
+      <tr style="background: green">
         <td>17</td>
         <td>14 Sept 2021</td>
         <td>30 Sept 2029</td>
