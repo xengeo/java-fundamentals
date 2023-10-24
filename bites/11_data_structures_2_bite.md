@@ -62,7 +62,7 @@ menu.remove("huel");
 If you don't already have one, define a class called `ScratchPad` so that you 
 can do some scripting in the `main` method.
 
-Then, in the main `method`:
+Then, in the `main` method:
 
 * Assign an empty `HashMap<String, Integer>` to a variable called `scores`
   * The keys will be quiz team names
@@ -83,6 +83,30 @@ Then:
 * Practice using `put` to add quiz team scores to the `HashMap`
 * Practice using `get` to retrieve the scores for a team
 
+<details>
+  <summary>Getting an error of "Array initializer is not allowed here"?</summary>
+  
+  If you've got something in your code like:
+  
+  ```java
+  scores.put("Quizzy Rascal", {1,2,3});
+  ```
+  
+  you'll find that IntelliJ is flagging `{1,2,3}` as problematic. While this
+  syntax for an `Integer[]` is OK in contexts like:
+  
+  ```java
+  Integer[] myIntegers = {1,2,3};
+  ```
+  
+  this shorthand initialisation isn't allowed in a method call, so you have to
+  explicitly tell Java that's what you want i.e.
+  
+  ```java
+  scores.put("Quizzy Rascal", new Integer[] {1,2,3});
+  ```
+</details>
+
 [Example solution](https://youtu.be/FOuxIG-F4Vg)
 
 ## Exercise 3
@@ -95,8 +119,6 @@ Define a class called `RockPaperScissors` which has:
 
 * a static field called `rules` which holds a nested `HashMap` (see below for 
 further guidance)
-* a static method called `play` which takes of either "rock", "paper" or 
-"scissors" and declares a winner.
 
 The `rules` `HashMap` should work like this:
 
@@ -114,29 +136,43 @@ programmatic steps.
 
 ## Challenge
 
-Define a class called `ScrabbleScore` with
-* a static method called `calculate` which takes a `String` and returns the 
-Scrabble score for the word, as an `Integer`
+Define a class called `ScrabbleScore` with:
+
 * a static field called `letterValues` which holds a `HashMap` of points for 
 each letter. Each key should be a single letter and each value should be its 
 points value.
+* a static method called `calculate` which takes a `String` and returns the 
+Scrabble score for the word, as an `Integer` e.g.:
+
+```java
+\\ Scrabble player places down the word "EXQUISITELY"
+calculate("EXQUISITELY");
+\\ => 30
+```
+
+__Note__: In the English language version of
+[Scrabble](https://en.wikipedia.org/wiki/Scrabble), tiles are worth the
+following:
+
+* 1 point - A, E, I, O, U, L, N, S, T, R
+* 2 points - D, G
+* 3 points - B, C, M, P
+* 4 points - F, H, V, W, Y
+* 5 points - K
+* 8 points - J, X
+* 10 points - Q, Z
+
+You might find you need to do a little searching around on the web for this one,
+especially for how to get hold of individual letters from the word. There are
+_lots_ of different approaches you could take here, some of which will require
+using a new `Character` type.
 
 <details>
   <summary>Please give me a hint!</summary>
   
-  In the English language version of Scrabble, tiles are worth the following:
-
-  * 1 point - A, E, I, O, U, L, N, S, T, R
-  * 2 points - D, G
-  * 3 points - B, C, M, P
-  * 4 points - F, H, V, W, Y
-  * 5 points - K
-  * 8 points - J, X
-  * 10 points - Q, Z
-
   Calculating the Scrabble score for a whole word will require a few steps:
   
-  * Creating a variable to hold the total score - it should start at 0<
+  * Creating a variable to hold the total score - it should start at 0
   * Splitting the word into letters
   * Looping over the letters to get the score for each one
   * Adding the score for each letter to the total score

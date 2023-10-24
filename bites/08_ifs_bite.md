@@ -122,21 +122,15 @@ were not leap years)
 **Example output:**
 
 ```java
-LeapYear.isLeapYear(2000); => True
-LeapYear.isLeapYear(1970); => False
-LeapYear.isLeapYear(1900); => False
-LeapYear.isLeapYear(1988); => True
-LeapYear.isLeapYear(1500); => False
+LeapYear.isLeapYear(2000); => true
+LeapYear.isLeapYear(1970); => false
+LeapYear.isLeapYear(1900); => false
+LeapYear.isLeapYear(1988); => true
+LeapYear.isLeapYear(1500); => false
 ```
 
-If you want to tackle some extra challenges, try these extension options:
-
-* Add a method which takes a start year and an end year, and returns an array 
-of all the leap years between.
-* Add a method which, when given a year, will return the closest leap year 
-(this could be before or after the given year).
-
-> After you're done, [submit your code and recording here.](https://airtable.com/shrvo9ePjlwnaiLv5?prefill_Item=java_ifs).
+> After you're done, [submit your code and recording
+> here.](https://airtable.com/shrvo9ePjlwnaiLv5?prefill_Item=java_ifs).
 
 [Next Challenge](09_loops_bite.md)
 

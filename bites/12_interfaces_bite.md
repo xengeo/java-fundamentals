@@ -30,7 +30,7 @@ that has been disconnected from a calculator or telephone. Let's have a look at
 one:
 
 ```java
-// an interface called number pad
+// an interface called NumberPad
 interface NumberPad {
   // some methods without method bodies
   public void pressNumber(Integer number);
@@ -42,17 +42,17 @@ We can use the interface to declare that another class should implement these
 two methods, like so:
 
 ```java
-// a class called Telephone that implements the number pad interface
+// a class called Telephone that implements the NumberPad interface
 class Telephone implements NumberPad {
 
   ArrayList<Integer> numberToDial;
 
   public Telephone() {
-     this.numberToDial = new Arraylist<Integer>();
+    this.numberToDial = new Arraylist<Integer>();
   }
 
-  // we've said the class implements the number pad interface
-  // so now we have to define the three number pad methods
+  // we've said the class implements the NumberPad interface
+  // so now we have to define the two NumberPad methods
 
   @Override
   public void pressNumber(Integer number) {
@@ -71,7 +71,7 @@ class Telephone implements NumberPad {
 > compile your code.
 
 You'll not be creating many interfaces in the near future, beyond this bite, 
-but you will see them being used in SpringBoot; a Java web framework that 
+but you will see them being used in SpringBoot - a Java web framework that 
 you'll definitely come across sooner or later. (Sooner, if you progress 
 through these bites!)
 
@@ -82,14 +82,16 @@ through these bites!)
 ## Exercise
 
 Define an interface called `GenericDiary` which has the following methods:
-* `addEntry`, which takes one `String` argument  - a new diary entry
+* `addEntry`, which takes one `String` argument - a new diary entry - and
+  doesn't return anything
 * `removeEntry`, which takes one `int` argument - the index of the entry to be 
-removed
+removed - and doesn't return anything
 * `readEntry`, which takes one `int` argument - the index of the entry to be 
-read
+read - and returns a `String`
 
 > Note that `removeEntry` and `readEntry` take `int`s, not `Integer`s. Try 
-> changing them to `Integer`s to see what happens.
+> changing them to `Integer`s to see what happens. If you're not sure what's
+> going on, check out the video later on!
 
 Next, define two classes, one called `TenDayDiary` and another called 
 `InfiniteDiary`. Both of these classes should implement the `GenericDiary` 

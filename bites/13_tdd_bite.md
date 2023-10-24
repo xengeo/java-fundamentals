@@ -6,14 +6,14 @@ example solution video, and a challenge without a solution video for you to test
 your learning. [Read more about how to use Makers
 Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
-In this bite, you'll learn how to use JUnit to incorporate test driven 
+In this bite, you'll learn how to use JUnit to incorporate test-driven 
 development (TDD) practices into your Java coding.
 
 ## Introduction
 
 If you've craving tests, this bite will sate your appetite.
 
-Here, you'll learn how to test drive a single class using JUnit, the most 
+Here, you'll learn how to test-drive a single class using JUnit, the most 
 popular testing framework for Java, but your first task will be to install a 
 tool called Gradle.
 
@@ -48,10 +48,9 @@ Using your iTerm or Terminal, head to the directory where you keep all of your
 Makers projects, create a new directory called `number_guesser`, and `cd` into 
 it. 
 
-We're going to build a programme called `NumberGuesser`, where the first player 
-chooses a number and the second player tries to guess it and receives helpful 
-feedback ("higher" or "lower") from the program, to guide them in the right 
-direction.
+We're going to build a programme called `NumberGuesser`, where player one
+chooses a number and player two tries to guess it and receives helpful feedback
+("higher" or "lower") from the program, to guide them in the right direction.
 
 In your `number_guesser` directory, run `gradle init` to start creating a new 
 Gradle project, then:
@@ -114,13 +113,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NumberGuesserTest {
-    @Test
-    public void testGuessingTooLowReturnsHigher() {
-        NumberGuesser game = new NumberGuesser(10);
-        // note that the expected value comes first
-        // if it helps, imagine Yoda saying "higher, it should be"
-        Assert.assertEquals("higher", game.guess(5));
-    }
+  @Test
+  public void testGuessingTooLowReturnsHigher() {
+    NumberGuesser game = new NumberGuesser(10);
+    // note that the expected value comes first
+    // if it helps, imagine Yoda saying "higher, it should be"
+    Assert.assertEquals("higher", game.guess(5));
+  }
 }
 ```
 
@@ -152,11 +151,11 @@ continue test driving our code in the exercise which follows.
 Based on the first test and what we've covered in previous sections, you know 
 everything you need in order to complete the `NumberGuesser` program using TDD.
 
-1. Do just enough to satisfy the compiler and no more. For example, you'll need 
+1. Do just enough to satisfy the compiler and no more. For example, you'll need
 to define the `NumberGuesser` class.
 2. Make the first test that we wrote together pass.
-3. Complete the program by test driving two more scenarios, one where player 2 
-guesses too high, and one where player 2 guesses correctly.
+3. Complete the program by test driving two more scenarios, one where player two
+guesses too high, and one where player two guesses correctly.
 
 [Example Solution](https://youtu.be/2h5FEr9uJVc)
 

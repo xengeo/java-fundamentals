@@ -1,4 +1,4 @@
-# Data Structures - Array Lists and Arrays
+# Data Structures - ArrayLists and Arrays
 
 _**This is a Makers Bite.** Bites are designed to train specific skills or
 tools. They contain an intro, a demonstration video, some exercises with an
@@ -16,7 +16,15 @@ to be useful in the immediate future. Here, you'll learn about creating lists
 in Java.
 
 > For this section, create a class called `Sandbox` so that you can write some 
-> experimental code in the `main` method.
+> experimental code in the `main` method. You'll need to `import` ArrayList too,
+> so your code will start by looking something like this:
+> ```java
+> import java.util.ArrayList;
+> 
+> public class Sandbox {
+>     [...]
+> }
+> ```
 
 ## `ArrayList`s
 
@@ -76,18 +84,18 @@ Finally, it's useful to know how to iterate through an ArrayList. There are a
 few options, but for now we'll go with one of the simplest iterators to 
 understand (it'll look very familiar to you if you've worked with Python). 
 
-If you already have an ArrayList of `pebbles`, you could do this:
+If you already have an ArrayList of `contentsOfMyPocket`, you could do this:
 
 ```java
-for (String pebble : pebbles) {
-  System.out.println(pebble);
+for (String item : contentsOfMyPocket) {
+  System.out.println(item);
 }
 ```
 
-Note the typing crops up again! Within the for loop, we use the variable 
-`pebble` to hold each item as we iterate through the ArrayList. When declaring 
-`pebble` we have to state what type of thing it will hold - in this case, by 
-typing `String pebble`.
+Note the typing crops up again! Within the for loop, we use the variable `item`
+to hold each item as we iterate through the ArrayList. When declaring `item` we
+have to state what type of thing it will hold - in this case, by typing `String
+item`.
 
 ## Arrays
 
@@ -155,7 +163,7 @@ make the task of adding items a bit more complex!
 
 ## Challenge
 
-Define a class called Queue which has an instance field called `people` that 
+Define a class called `Queue` which has an instance field called `people` that 
 holds an ArrayList of Strings. Each item in the `people` ArrayList will be the 
 name of a person in a queue. The class should have three methods.
 

@@ -17,11 +17,11 @@ by looking at the Message program which you ran in the previous step.
 // we created a class called Message
 class Message {
   // we added a slightly odd looking method called main
-    public static void main(String[] args) {
-      // this line does the printing
-        System.out.println("Hello? Is anyone out there?");
-      // note that each line inside a method MUST end with a semi colon
-    }
+  public static void main(String[] args) {
+    // this line does the printing
+    System.out.println("Hello? Is anyone out there?");
+    // note that each line inside a method MUST end with a semi colon
+  }
 }
 ```
 

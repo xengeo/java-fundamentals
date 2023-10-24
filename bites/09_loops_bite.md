@@ -91,10 +91,20 @@ Adapt your FizzBuzz program to use a `while` loop instead of a `for` loop.
 
 [Example Solution](https://youtu.be/FYPqVL2wQto)
 
-## Challenge
+## Challenge 1
 
 Adapt your FizzBuzz solution to generate the sequence for numbers 100 to 1 (in 
 other words, counting down rather than up).
+
+## Challenge 2
+
+If you want to tackle another challenge, try these extensions to your `LeapYear`
+class from the previous page's process feedback challenge:
+
+* Add a method which takes a start year and an end year, and returns an array of
+  all the leap years between.
+* Add a method which, when given a year, will return the closest leap year (this
+  could be before or after the given year).
 
 [Next Challenge](10_data_structures_1_bite.md)
 

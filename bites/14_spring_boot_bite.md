@@ -1,4 +1,4 @@
-# SpringBoot
+# Spring Boot
 
 _**This is a Makers Bite.** Bites are designed to train specific skills or
 tools. They contain an intro, a demonstration video, some exercises with an
@@ -7,7 +7,7 @@ your learning. [Read more about how to use Makers
 Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
 In this bite, you'll learn to build simple web applications in Java by using 
-the SpringBoot framework.
+the Spring Boot framework.
 
 ## Introduction
 
@@ -15,7 +15,7 @@ Spring is tool used to build web-applications in Java. It's like Sinatra (in
 Ruby) or Flask (in Python), but with a ton of extra features that will appear 
 a bit magical at first - perhaps to your confusion and / or annoyance!
 
-Spring**Boot** is a specific Spring setup that is slightly easier for newcomers 
+Spring **Boot** is a specific Spring setup that is slightly easier for newcomers 
 to use.
 
 It's a huge and complex tool which can be used to build all manner of web 
@@ -24,20 +24,22 @@ applications. Here, we'll focus on building something relatively simple :)
 ### Spring Initializr
 
 Those helpful folks at Spring have created an online tool to help you get set 
-up with SpringBoot - it's called Spring Initializr. You can use it to configure 
-an initial SpringBoot application and download a starter codebase.
+up with Spring Boot - it's called Spring Initializr. You can use it to configure 
+an initial Spring Boot application and download a starter codebase.
 
-[Here's one I configured earlier](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.0.10&packaging=jar&jvmVersion=17&groupId=com.example&artifactId=hello-world&name=hello-world&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.hello-world&dependencies=web). 
+[Here's one I configured earlier](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.0.12&packaging=jar&jvmVersion=17&groupId=com.example&artifactId=hello-world&name=hello-world&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.hello-world&dependencies=web). 
 If you click on `GENERATE`, you'll download the starter codebase as a zip file 
 which you can then unzip and open in IntelliJ.
 
 Once you've done that, you can start the application using the 'play' button in 
-IntelliJ. If that doesn't work for some reason, find the Gradle tab on the left 
-and go to `tasks` -> `application` then double click `bootRun`.
+IntelliJ. If that doesn't work for some reason, find the Gradle tab on the far
+left or far right of IntelliJ's window (or access it from the menu `View` ->
+`Tool Windows` -> `gradle`) and go to `tasks` -> `application` then double click
+`bootRun`.
 
 IntelliJ will chuck a ton of text into the integrated terminal and then finally 
 tell you that the application is running on port 8080 - go to `localhost:8080` 
-in your browser and you'll see a SpringBoot error message! Congratulations, 
+in your browser and you'll see a Spring Boot error message! Congratulations, 
 you're ready to go.
 
 ### Adding a Controller
@@ -59,10 +61,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldController {
 
-	@GetMapping("/")
-	public String index() {
-		return "Greetings from SpringBoot!";
-	}
+  @GetMapping("/")
+  public String index() {
+    return "Greetings from Spring Boot!";
+  }
 
 }
 ```
@@ -76,15 +78,15 @@ Spring Web dependency - `GetMapping` and `RestController`.
 
 The expressions that start with `@` are called annotations. They are used to 
 label chunks of code either for the compiler, for a tool that you're using 
-(in this case, SpringBoot) or so that something specific happens at runtime 
+(in this case, Spring Boot) or so that something specific happens at runtime 
 (when your code is executed).
 
-* `@RestController` tells SpringBoot that the following class is a controller 
+* `@RestController` tells Spring Boot that the following class is a controller 
 for a web application.
-* `@GetMapping` tells SpringBoot that this code should be used to handle a 
+* `@GetMapping` tells Spring Boot that this code should be used to handle a 
 specific `GET` request.
 
-You'll see lots of other annotations in Java, both in SpringBoot and elsewhere. 
+You'll see lots of other annotations in Java, both in Spring Boot and elsewhere. 
 For example, as you saw in the Test Driven Development bite, the JUnit testing 
 framework using `@Test` to annotate tests so that they can be found and run 
 when the test suite is executed.
@@ -98,7 +100,7 @@ We're going to use a templating engine called Thymeleaf. To set things up,
 we'll need to:
 
 1. Add the Thymeleaf dependency to `build.gradle`
-2. Configure SpringBoot to use Thymeleaf
+2. Configure Spring Boot to use Thymeleaf
 
 #### Adding the Dependency
 
@@ -117,10 +119,10 @@ to Maven, not Gradle.
 
 [Show me the Maven syntax for Thymeleaf, I'm curious!](https://www.baeldung.com/spring-boot-start#simple-mvc-view)
 
-#### Configuring SpringBoot
+#### Configuring Spring Boot
 
 Web frameworks tend to have a set of configuration files that are separate 
-from the business logic, and SpringBoot is no different. You can also use 
+from the business logic, and Spring Boot is no different. You can also use 
 multiple configuration files to, for example, specify different configurations 
 for different environments.
 
@@ -130,19 +132,20 @@ the following (without the comments).
 
 ```java
 spring.thymeleaf.cache=false
-// tell SpringBoot to use Thymeleaf
-spring.thymeleaf.enabled=true 
-// tell SpringBoot where to find Thymeleaf templates
+// tell Spring Boot to use Thymeleaf
+spring.thymeleaf.enabled=true
+// tell Spring Boot where to find Thymeleaf templates
 spring.thymeleaf.prefix=classpath:/templates/
-// tell SpringBoot what file extension your templates will have
+// tell Spring Boot what file extension your templates will have
 spring.thymeleaf.suffix=.html
 ```
 
 ### Adding a Template
 
-Now we're ready to add a template. Create a new HTML file in `templates` 
-called `home` - if you specifically choose to add a new HTML file, you won't 
-need to include the `.html` extension as IntelliJ will do that for you.
+Now we're ready to add a template. Create a new HTML file in `src` -> `main` ->
+`resources` -> `templates` called `home` - if you specifically choose to add a
+new HTML file, you won't need to include the `.html` extension as IntelliJ will
+do that for you.
 
 Add any HTML you like to your home page - be creative, if you're in the mood, 
 but don't spend hours on it :)
@@ -152,7 +155,7 @@ Finally, change your controller action from this:
 ```java
 @GetMapping("/")
 public String index() {
-	return "Greetings from SpringBoot!";
+  return "Greetings from Spring Boot!";
 }
 ```
 
@@ -161,8 +164,15 @@ public String index() {
 ```java
 @GetMapping("/")
 public ModelAndView index() {
-	return new ModelAndView("home");
+  return new ModelAndView("home");
 }
+```
+
+remembering you'll need a new import at the top of the file for `ModelAndView`
+too:
+
+```java
+import org.springframework.web.servlet.ModelAndView;
 ```
 
 Then restart your server and go back to `localhost:8080` to see your shiny new 

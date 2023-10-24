@@ -1,7 +1,7 @@
 # Java Fundamentals (With IntelliJ)
 
 _Coaching this? Read the coach guidance
-[here.](https://github.com/makersacademy/slug/blob/main/materials/universe/language_intros/challenges/java_fundamentals_with_intellij/README.ed.md)_
+[here.](https://github.com/makersacademy/slug/blob/main/materials/universe/language_intros/challenges/java_fundamentals_with_intellij/HOW_TO_COACH.x.md)_
 
 Java is a very popular language in the software world. It can be used to build 
 a lot of different kinds of programs, including desktop, mobile and web 
@@ -25,7 +25,6 @@ In this module you will learn to:
 * Test-drive programs in Java using Object Oriented Programming.
 * Explain the main differences between Java and languages like Python, Ruby or 
 JavaScript.
-
 
 ## Install a Java Development Kit
 
@@ -125,7 +124,7 @@ tagged with a :satellite:.
 11. [Data Structures - Part 2](./bites/11_data_structures_2_bite.md)
 12. [Interfaces](./bites/12_interfaces_bite.md)
 13. [Test Driven Development](./bites/13_tdd_bite.md) :satellite:
-14. [SpringBoot](./bites/14_spring_boot_bite.md)
+14. [Spring Boot](./bites/14_spring_boot_bite.md)
 
 ## Phase 2 - Bank
 
