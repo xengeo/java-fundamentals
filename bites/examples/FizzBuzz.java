@@ -2,7 +2,7 @@ package bites.examples;
 
 public class FizzBuzz {
 
-//    static method - runs on the class, as opposed to an instance of the class
+    //    static method - runs on the class, as opposed to an instance of the class
     public static String play(Integer number) {
         if (number % 15 == 0) {
             return "FizzBuzz";
@@ -15,11 +15,17 @@ public class FizzBuzz {
         }
     }
 
-//    main method
+    //    main method
     public static void main(String[] args) {
-        System.out.println(FizzBuzz.play(1));
-        System.out.println(FizzBuzz.play(3));
-        System.out.println(FizzBuzz.play(5));
-        System.out.println(FizzBuzz.play(15));
+
+//        for (Integer number = 1; number <= 100; number++) {
+//            System.out.println(play(number));
+//        }
+
+        Integer counter = 100;
+        while (counter >= 1) {
+            System.out.println(play(counter));
+            counter--;
+        }
     }
 }
